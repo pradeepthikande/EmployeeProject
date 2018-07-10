@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { EmployeeService } from '../shared/employee.service';
 import { Employee } from '../shared/employee.interface';
 @Component({
   selector: 'app-employeegrid-table',
   templateUrl: './employeegrid-table.component.html',
-  styleUrls: ['./employeegrid-table.component.css']
+  styleUrls: ['./employeegrid-table.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class EmployeegridTableComponent implements OnInit {
   employees: Employee[];
@@ -31,16 +32,86 @@ export class EmployeegridTableComponent implements OnInit {
   loadEmployee() {
     var that = this;
     this.emp = [
-      { sno: '01', firstName: 'Phani', lastName: 'Rahul', emailId: 'rahul.sivalenka@walkingtree.tech', dept:'Software Engineer',designation:'developer', joinDate:'31-dec-2018',details:'View Details' },
-      { sno: '01', firstName: 'Phani', lastName: 'Rahul', emailId: 'rahul.sivalenka@walkingtree.tech', dept:'Software Engineer',designation:'developer', joinDate:'31-dec-2018',details:'View Details' },
-      { sno: '01', firstName: 'Phani', lastName: 'Rahul', emailId: 'rahul.sivalenka@walkingtree.tech', dept:'Software Engineer',designation:'developer', joinDate:'31-dec-2018',details:'View Details' },
-      { sno: '01', firstName: 'Phani', lastName: 'Rahul', emailId: 'rahul.sivalenka@walkingtree.tech', dept:'Software Engineer',designation:'developer', joinDate:'31-dec-2018',details:'View Details' },
-      { sno: '01', firstName: 'Phani', lastName: 'Rahul', emailId: 'rahul.sivalenka@walkingtree.tech', dept:'Software Engineer',designation:'developer', joinDate:'31-dec-2018',details:'View Details' },
-      { sno: '01', firstName: 'Phani', lastName: 'Rahul', emailId: 'rahul.sivalenka@walkingtree.tech', dept:'Software Engineer',designation:'developer', joinDate:'31-dec-2018',details:'View Details' },
-      { sno: '01', firstName: 'Phani', lastName: 'Rahul', emailId: 'rahul.sivalenka@walkingtree.tech', dept:'Software Engineer',designation:'developer', joinDate:'31-dec-2018',details:'View Details' },
-      { sno: '01', firstName: 'Phani', lastName: 'Rahul', emailId: 'rahul.sivalenka@walkingtree.tech', dept:'Software Engineer',designation:'developer', joinDate:'31-dec-2018',details:'View Details' }
-    
-      
+      {
+        sno: '01',
+        firstName: 'Phani',
+        lastName: 'Rahul',
+        emailId: 'rahul.sivalenka@walkingtree.tech',
+        dept: 'Software Engineer',
+        designation: 'developer',
+        joinDate: '31-dec-2018',
+        details: 'View Details'
+      },
+      {
+        sno: '01',
+        firstName: 'Phani',
+        lastName: 'Rahul',
+        emailId: 'rahul.sivalenka@walkingtree.tech',
+        dept: 'Software Engineer',
+        designation: 'developer',
+        joinDate: '31-dec-2018',
+        details: 'View Details'
+      },
+      {
+        sno: '01',
+        firstName: 'Phani',
+        lastName: 'Rahul',
+        emailId: 'rahul.sivalenka@walkingtree.tech',
+        dept: 'Software Engineer',
+        designation: 'developer',
+        joinDate: '31-dec-2018',
+        details: 'View Details'
+      },
+      {
+        sno: '01',
+        firstName: 'Phani',
+        lastName: 'Rahul',
+        emailId: 'rahul.sivalenka@walkingtree.tech',
+        dept: 'Software Engineer',
+        designation: 'developer',
+        joinDate: '31-dec-2018',
+        details: 'View Details'
+      },
+      {
+        sno: '01',
+        firstName: 'Phani',
+        lastName: 'Rahul',
+        emailId: 'rahul.sivalenka@walkingtree.tech',
+        dept: 'Software Engineer',
+        designation: 'developer',
+        joinDate: '31-dec-2018',
+        details: 'View Details'
+      },
+      {
+        sno: '01',
+        firstName: 'Phani',
+        lastName: 'Rahul',
+        emailId: 'rahul.sivalenka@walkingtree.tech',
+        dept: 'Software Engineer',
+        designation: 'developer',
+        joinDate: '31-dec-2018',
+        details: 'View Details'
+      },
+      {
+        sno: '01',
+        firstName: 'Phani',
+        lastName: 'Rahul',
+        emailId: 'rahul.sivalenka@walkingtree.tech',
+        dept: 'Software Engineer',
+        designation: 'developer',
+        joinDate: '31-dec-2018',
+        details: 'View Details'
+      },
+      {
+        sno: '01',
+        firstName: 'Phani',
+        lastName: 'Rahul',
+        emailId: 'rahul.sivalenka@walkingtree.tech',
+        dept: 'Software Engineer',
+        designation: 'developer',
+        joinDate: '31-dec-2018',
+        details: 'View Details'
+      }
     ];
     // this.employeeService.getEmployee().then(function(employee) {
     //   console.log(employee);
