@@ -1,10 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
+import { NgModule, VERSION } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { ForgotComponent } from './forgot/forgot.component';
 
-import { FormsModule } from '@angular/forms'
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { SidemenuComponent } from './dashboard/sidemenu/sidemenu.component';
+import { HeaderComponent } from './dashboard/header/header.component';
+import { EmployeegridComponent } from './dashboard/employeegrid/employeegrid.component';
+import { DropdownModule } from 'primeng/dropdown';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,9 +18,14 @@ import { FormsModule } from '@angular/forms'
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    DashboardComponent,
+    SidemenuComponent,
+    HeaderComponent,
+    EmployeegridComponent,  BrowserAnimationsModule
   ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
