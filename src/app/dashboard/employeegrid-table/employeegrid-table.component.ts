@@ -30,14 +30,22 @@ export class EmployeegridTableComponent implements OnInit {
   }
   loadEmployee() {
     var that = this;
-    // this.emp = [
-    //   { sno: 'sno', firstName: 'S.No' },
-    //   { sno: 'firstName', firstName: 'First Name' }
-    // ];
-    this.employeeService.getEmployee().then(function(employee) {
-      console.log(employee);
-      that.emp = <any>employee;
-      console.log(that.emp);
-    });
+    this.emp = [
+      { sno: '01', firstName: 'Phani', lastName: 'Rahul', emailId: 'rahul.sivalenka@walkingtree.tech', dept:'Software Engineer',designation:'developer', joinDate:'31-dec-2018',details:'View Details' },
+      { sno: '01', firstName: 'Phani', lastName: 'Rahul', emailId: 'rahul.sivalenka@walkingtree.tech', dept:'Software Engineer',designation:'developer', joinDate:'31-dec-2018',details:'View Details' },
+      { sno: '01', firstName: 'Phani', lastName: 'Rahul', emailId: 'rahul.sivalenka@walkingtree.tech', dept:'Software Engineer',designation:'developer', joinDate:'31-dec-2018',details:'View Details' },
+      { sno: '01', firstName: 'Phani', lastName: 'Rahul', emailId: 'rahul.sivalenka@walkingtree.tech', dept:'Software Engineer',designation:'developer', joinDate:'31-dec-2018',details:'View Details' },
+      { sno: '01', firstName: 'Phani', lastName: 'Rahul', emailId: 'rahul.sivalenka@walkingtree.tech', dept:'Software Engineer',designation:'developer', joinDate:'31-dec-2018',details:'View Details' },
+      { sno: '01', firstName: 'Phani', lastName: 'Rahul', emailId: 'rahul.sivalenka@walkingtree.tech', dept:'Software Engineer',designation:'developer', joinDate:'31-dec-2018',details:'View Details' },
+      { sno: '01', firstName: 'Phani', lastName: 'Rahul', emailId: 'rahul.sivalenka@walkingtree.tech', dept:'Software Engineer',designation:'developer', joinDate:'31-dec-2018',details:'View Details' },
+      { sno: '01', firstName: 'Phani', lastName: 'Rahul', emailId: 'rahul.sivalenka@walkingtree.tech', dept:'Software Engineer',designation:'developer', joinDate:'31-dec-2018',details:'View Details' }
+    
+      
+    ];
+    // this.employeeService.getEmployee().then(function(employee) {
+    //   console.log(employee);
+    //   that.emp = <any>employee;
+    //   console.log(that.emp);
+    // });
   }
 }
