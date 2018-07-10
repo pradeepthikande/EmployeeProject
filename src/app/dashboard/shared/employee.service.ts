@@ -10,9 +10,12 @@ import { Employee } from "./employee.interface";
 export class EmployeeService {
   constructor(private http:HttpClient) { }
   getEmployee() {
-        return this.http.get('/employee.json')
+        return this.http.get('assets/employee.json')        
                     .toPromise()
-                    .then(res => <Employee[]> res)
-                    .then(data => { return data });
+                    .then(function(res) {
+                        // console.log(res);
+                       return  <Employee[]> res;
+                    }
+                   
     }
 }

@@ -1,19 +1,22 @@
 <p>
   employeegrid-table works!
 </p>
-<p-table [value]="employees">
+<div *ngIf="emp">
+  <p-table [value]="emp">
     <ng-template pTemplate="header">
-        <tr>
-            <th *ngFor="let col of cols">
-                {{col.header}}
-            </th>
-        </tr>
+      <tr>
+        <th *ngFor="let col of cols">
+          {{col.header}}
+        </th>
+      </tr>
     </ng-template>
     <ng-template pTemplate="body" let-employee>
-        <tr>
-            <td *ngFor="let col of cols">
-                    {{car[col.field]}}
-            </td>
-        </tr>
+      <tr>
+        <td *ngFor="let col of cols">
+          {{employee[col.field]}}
+        </td>
+      </tr>
+      <!--{{employee.sno}}-->
     </ng-template>
-</p-table>
+  </p-table>
+</div>

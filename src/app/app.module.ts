@@ -3,8 +3,9 @@ import { NgModule, VERSION } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 
+import { ForgotComponent } from './login/forgot/forgot.component';
+import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
-
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SidemenuComponent } from './dashboard/sidemenu/sidemenu.component';
 import { HeaderComponent } from './dashboard/header/header.component';
@@ -12,14 +13,14 @@ import { EmployeegridComponent } from './dashboard/employeegrid/employeegrid.com
 import { DropdownModule } from 'primeng/dropdown';
 import { FormsModule } from '@angular/forms';
 import { EmployeegridTableComponent } from './dashboard/employeegrid-table/employeegrid-table.component';
-import {TableModule} from 'primeng/table';
-import {EmployeeService} from "./dashboard/shared/employee.service";
-import { ForgotComponent } from './login/forgot/forgot.component';
-import{LoginComponent} from './login/login.component';
+import { TableModule } from 'primeng/table';
+import { EmployeeService } from './dashboard/shared/employee.service';
 
-import {CheckboxModule} from 'primeng/primeng';
+import { LoginComponent } from './login/login.component';
+
+import { CheckboxModule } from 'primeng/primeng';
 import { AppRoutingModule, routingComponents } from './app.routing';
-import {ButtonModule} from 'primeng/primeng';
+import { ButtonModule } from 'primeng/primeng';
 
 @NgModule({
   declarations: [
@@ -38,9 +39,14 @@ import {ButtonModule} from 'primeng/primeng';
     BrowserAnimationsModule,
     DropdownModule,
     TableModule,
-    HttpModule,routingComponents,CheckboxModule,AppRoutingModule,ButtonModule
+    HttpModule,
+    routingComponents,
+    CheckboxModule,
+    AppRoutingModule,
+    ButtonModule,
+    HttpClientModule
   ],
-  
+
   providers: [EmployeeService],
   bootstrap: [AppComponent]
 })

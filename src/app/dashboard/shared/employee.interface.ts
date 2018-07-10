@@ -1,10 +1,10 @@
-export interface Employee {
-    sno;
-    firstName;
-    lastName;
-    emailId;
-   dept;
-    designation;
-    joinDate;
-    details;
+export class Employee {
+    sno:string;
+    firstName:string;
+    lastName:string;
+    emailId:string;
+    dept :string;
+    designation:string;
+    joinDate:Date;
+    details:string;
 }
