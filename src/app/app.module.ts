@@ -29,8 +29,9 @@ import { AppRoutingModule, routingComponents } from './app.routing';
 import { ButtonModule } from 'primeng/primeng';
 
 
-
-
+import { CommonModule } from '@angular/common';
+// import { ShadowEmpComponent } from '../../modules/shared-module/shadow-emp';
+import { ShadowEmpComponent} from "../modules/shared-module/shadow-emp/shadow-emp.component";
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +42,8 @@ import { ButtonModule } from 'primeng/primeng';
     EmployeegridComponent,
     SidemenuComponent,
     HeaderComponent,
-    EmployeegridTableComponent
+    EmployeegridTableComponent,
+    ShadowEmpComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +56,8 @@ import { ButtonModule } from 'primeng/primeng';
     CheckboxModule,
     AppRoutingModule,
     ButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    CommonModule
   ],
 
   providers: [EmployeeService,
