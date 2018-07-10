@@ -1,0 +1,28 @@
+<div class="ui-g">
+  
+  <div class="ui-g-5"></div>
+  <div class="ui-g-7">
+    <h2>sign in</h2>
+    <small [ngClass]="['classThree']">Hello sign in with your UserName and Password</small>
+  </div>
+  <div class="ui-g-5"></div>
+  <div class="ui-g-7">
+
+    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [(ngModel)]="text" placeholder="Email ID | User Name"><br>
+    <input [ngClass]="['classOne']" pPassword type="password" placeholder="Password" />
+
+
+
+
+    <div class="ui-g-12">
+      <p-checkbox [ngClass]="['wht']" name="Remember me" value="Remember me" label="Remember me" [(ngModel)]="selected"></p-checkbox>
+      <a  routerLink='./forgot' class="ui-link">Forgot Password?</a>
+    </div>
+
+    <div class="ui-g-12">
+
+      <button [ngClass]="['classTwo']" pButton type="button" (click)="add()" label="SIGN IN"></button>
+<p [ngClass]="['classF']">Dont have an account? <a [ngClass]="['classFi']" href="#">Sign Up</a></p>{{a}}
+    </div>
+  </div>
+</div>
