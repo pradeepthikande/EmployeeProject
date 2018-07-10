@@ -28,6 +28,7 @@ padding-bottom: 614px;
 
 .message{
     color: #B8B8DB;
+    font-size: 10px;
 }
 
 .form{
@@ -50,9 +51,11 @@ padding-bottom: 614px;
     margin-right:12%;
     color:#B8B8DB;
     text-decoration: none;
+    font-size: 12px;
 }
 .content2{
     /*margin-right:12%;    */
     color:#B8B8DB;
     text-decoration: none;
+    font-size: 12px;
 }
