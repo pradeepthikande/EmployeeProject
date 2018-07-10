@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(52,204,198,0.26);
+        stroke: #34ccc6;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Expand" transform="translate(-332 -406)">
+    <g id="Rectangle_40" data-name="Rectangle 40" class="cls-1" transform="translate(332 406)">
+      <rect class="cls-3" width="24" height="24" rx="5"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="23" height="23" rx="4.5"/>
+    </g>
+    <rect id="Rectangle_41" data-name="Rectangle 41" class="cls-2" width="8" height="2" rx="1" transform="translate(340 417)"/>
+    <rect id="Rectangle_54" data-name="Rectangle 54" class="cls-2" width="8" height="2" rx="1" transform="translate(345 414) rotate(90)"/>
+  </g>
+</svg>

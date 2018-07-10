@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #302f74;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #302f74;
+      }
+
+      .cls-2 {
+        fill: #92e2f9;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Radio_Button_Checked" data-name="Radio Button_Checked" transform="translate(-753 -278)">
+    <g id="Rectangle_50" data-name="Rectangle 50" class="cls-1" transform="translate(753 278)">
+      <rect class="cls-3" width="16" height="16" rx="8"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="15" height="15" rx="7.5"/>
+    </g>
+    <g id="Rectangle_51" data-name="Rectangle 51" class="cls-2" transform="translate(755 280)">
+      <rect class="cls-3" width="12" height="12" rx="6"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="11" height="11" rx="5.5"/>
+    </g>
+  </g>
+</svg>

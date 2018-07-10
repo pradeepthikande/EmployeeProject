@@ -10,6 +10,9 @@ import { HeaderComponent } from './dashboard/header/header.component';
 import { EmployeegridComponent } from './dashboard/employeegrid/employeegrid.component';
 import { DropdownModule } from 'primeng/dropdown';
 import { FormsModule } from '@angular/forms';
+import { EmployeegridTableComponent } from './dashboard/employeegrid-table/employeegrid-table.component';
+import {TableModule} from 'primeng/table';
+import {EmployeeService} from "./dashboard/shared/employee.service";
 
 @NgModule({
   declarations: [
@@ -18,16 +21,18 @@ import { FormsModule } from '@angular/forms';
     DashboardComponent,
     EmployeegridComponent,
     SidemenuComponent,
-    HeaderComponent
+    HeaderComponent,
+    EmployeegridTableComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    DropdownModule
+    DropdownModule,
+    TableModule
   ],
   
-  providers: [],
+  providers: [EmployeeService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

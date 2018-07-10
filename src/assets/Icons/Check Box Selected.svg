@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #302f74;
+        stroke: #302f74;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Check_Box_Selected" data-name="Check Box Selected" transform="translate(-765 -278)">
+    <g id="Rectangle_50" data-name="Rectangle 50" class="cls-1" transform="translate(765 278)">
+      <rect class="cls-3" width="16" height="16" rx="4"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="15" height="15" rx="3.5"/>
+    </g>
+    <g id="Group_67" data-name="Group 67" transform="translate(768 290)">
+      <g id="Group_66" data-name="Group 66" transform="translate(8.68 -8)">
+        <path id="Path_36" data-name="Path 36" class="cls-2" d="M0,0-5.179,5.17l-2.09-2.08L-8.68,4.5l3.5,3.5L1.41,1.41Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

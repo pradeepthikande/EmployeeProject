@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #302f74;
+        stroke: #302f74;
+      }
+
+      .cls-2 {
+        stroke: none;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Check_Box_Unchecked" data-name="Check Box_Unchecked" class="cls-1">
+    <rect class="cls-2" width="16" height="16" rx="4"/>
+    <rect class="cls-3" x="0.5" y="0.5" width="15" height="15" rx="3.5"/>
+  </g>
+</svg>
