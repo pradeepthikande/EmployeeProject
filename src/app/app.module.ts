@@ -15,15 +15,16 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     ForgotComponent,
-    DashboardComponent
+    DashboardComponent,
+    EmployeegridComponent,
+    SidemenuComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    DashboardComponent,
-    SidemenuComponent,
-    HeaderComponent,
-    EmployeegridComponent,  BrowserAnimationsModule
+    BrowserAnimationsModule,
+    DropdownModule
   ],
   
   providers: [],
