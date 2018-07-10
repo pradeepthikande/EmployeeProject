@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, VERSION } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
-import { ForgotComponent } from './forgot/forgot.component';
+
 import { HttpModule } from '@angular/http';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -14,10 +14,17 @@ import { FormsModule } from '@angular/forms';
 import { EmployeegridTableComponent } from './dashboard/employeegrid-table/employeegrid-table.component';
 import {TableModule} from 'primeng/table';
 import {EmployeeService} from "./dashboard/shared/employee.service";
+import { ForgotComponent } from './login/forgot/forgot.component';
+import{LoginComponent} from './login/login.component';
+
+import {CheckboxModule} from 'primeng/primeng';
+import { AppRoutingModule, routingComponents } from './app.routing';
+import {ButtonModule} from 'primeng/primeng';
 
 @NgModule({
   declarations: [
     AppComponent,
+    LoginComponent,
     ForgotComponent,
     DashboardComponent,
     EmployeegridComponent,
@@ -31,7 +38,7 @@ import {EmployeeService} from "./dashboard/shared/employee.service";
     BrowserAnimationsModule,
     DropdownModule,
     TableModule,
-    HttpModule
+    HttpModule,routingComponents,CheckboxModule,AppRoutingModule,ButtonModule
   ],
   
   providers: [EmployeeService],
