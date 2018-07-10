@@ -1,0 +1,18 @@
+.ui-table .ui-table-tbody > tr > td {
+    border: 2px solid #302F74;
+ text-align: center;
+    color:white;
+}
+.ui-table .ui-table-tbody > tr > th {
+    background-color: #302F74!important;
+}
+.ui-table{
+    border-radius: 20px;
+     border: 2px solid gray;
+}
+.ui-table .ui-table-tbody > tr:nth-child(odd){
+    background-color: #302F74;
+}
+.ui-table .ui-table-tbody > tr:nth-child(even){
+    background-color: #5453a4;
+}
