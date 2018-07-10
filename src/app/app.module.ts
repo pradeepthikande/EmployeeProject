@@ -3,6 +3,7 @@ import { NgModule, VERSION } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { ForgotComponent } from './forgot/forgot.component';
+import { HttpModule } from '@angular/http';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SidemenuComponent } from './dashboard/sidemenu/sidemenu.component';
@@ -29,7 +30,8 @@ import {EmployeeService} from "./dashboard/shared/employee.service";
     FormsModule,
     BrowserAnimationsModule,
     DropdownModule,
-    TableModule
+    TableModule,
+    HttpModule
   ],
   
   providers: [EmployeeService],
