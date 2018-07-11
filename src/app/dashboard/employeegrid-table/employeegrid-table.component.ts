@@ -14,7 +14,7 @@ export class EmployeegridTableComponent implements OnInit {
   errorMessage : string;
 
   constructor(private employeeService: EmployeeService) {
-    this.loadEmployee.bind(this);
+    // this.loadEmployee.bind(this);
   }
 
   ngOnInit() {
@@ -31,10 +31,11 @@ export class EmployeegridTableComponent implements OnInit {
     this.loadEmployee();
   }
   loadEmployee() {
-    var that=this;
-      this.employeeService.getEmployee().then(function(employee) {
-        console.log(employee);
-        that.emp = employee.employee;
+    // var that=this;
+      this.employeeService.getEmployee().subscribe(data =>{
+      console.log(data);
+        this.emp = data.employee;
+      });
     });
   //   this.employeeService.getEmployee().subscribe(
   //               data => this.employees = data,
