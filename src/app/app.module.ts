@@ -24,7 +24,10 @@ import{AddEmployeeComponent} from '../modules/add-employee-module/add-employee/a
 import{AccessDetailsComponent} from '../modules/add-employee-module/add-employee/access-details/access-details.component'
 import{AddressDetailsComponent} from '../modules/add-employee-module/add-employee/address-details/address-details.component'
 import{PersonalDetailsComponent} from '../modules/add-employee-module/add-employee/personal-details/personal-details.component'
-import{WorkDetailsComponent} from '../modules/add-employee-module/add-employee/work-details/work-details.component'
+import{WorkDetailsComponent} from '../modules/add-employee-module/add-employee/work-details/work-details.component';
+import {CalendarModule} from 'primeng/primeng';
+import {RadioButtonModule} from 'primeng/primeng';
+
 
 
 import { CommonModule } from '@angular/common';
@@ -64,7 +67,9 @@ import { TotalEmployeesComponent } from "../modules/shared-module/total-employee
     CheckboxModule,
     AppRoutingModule,
     ButtonModule,
-    HttpClientModule,TabViewModule
+    HttpClientModule,TabViewModule,
+    CalendarModule,
+    RadioButtonModule
   ],
 
   providers: [EmployeeService,

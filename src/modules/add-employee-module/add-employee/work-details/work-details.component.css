@@ -1,0 +1,19 @@
+
+.ui-dropdown    {
+  width:100% !important;
+}
+
+.ui-dropdown .ui-inputtext {
+    background: #302F74!important;
+    color: white;
+    transition: .2s;
+}
+.classOne{
+
+    padding-top: 20px;
+    padding-left: 30px
+}
+.classTwo{
+
+    margin-left: 10px
+}

@@ -1,3 +1,85 @@
-<p>
-  work-details works!
-</p>
+<div class="ui-g">
+  <div class="ui-g-2"></div>
+
+  <div class="ui-g-8">
+    <div class="ui-grid ui-grid-responsive ui-fluid">
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-12">
+
+          <p-dropdown [options]="department" [autoWidth]="false" [(ngModel)]="selectedDepartment" placeholder="select department">
+
+          </p-dropdown>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="ui-g">
+  <div class="ui-g-2"></div>
+
+  <div class="ui-g-8">
+    <div class="ui-grid ui-grid-responsive ui-fluid">
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-12">
+
+          <p-dropdown [options]="department" [autoWidth]="false" [(ngModel)]="selectedDepartment" placeholder="select Primary Skill">
+
+          </p-dropdown>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="ui-g">
+  <div class="ui-g-2"></div>
+
+  <div class="ui-g-4">
+    <div class="ui-grid ui-grid-responsive ui-fluid">
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-12">
+          <label>status</label>
+          <p-dropdown [options]="department" [autoWidth]="false" [(ngModel)]="selectedDepartment" placeholder="Select Status">
+
+          </p-dropdown>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="ui-g" style="width:250px;margin-top:28px">
+    <div class="ui-g-12">
+      <p-checkbox name="group1" value="Is billable" label="is Billable" [(ngModel)]="selectedCities"></p-checkbox>
+    </div>
+  </div>
+
+
+  <div class="ui-g">
+    <div class="ui-g-2"></div>
+    <div class="ui-g-10">
+      <div class="ui-grid ui-grid-responsive ui-fluid">
+        <div class="ui-grid-row">
+          <div class="ui-grid-col-6">
+            <small>Joining Date</small>
+            <p-calendar [(ngModel)]="date2" [showIcon]="true"></p-calendar> <span style="margin-left:35px">{{date2|date}}</span>
+          </div>
+          <div class="ui-grid-col-6">
+            <small>Confirmed Date</small>
+            <p-calendar [ngClass]="['classTwo']" [(ngModel)]="date2" [showIcon]="true"></p-calendar> <span style="margin-left:35px">{{date2|date}}</span>
+          </div>
+          <div class="ui-grid-col-6">
+            <small>Seperated Date</small>
+            <p-calendar [ngClass]="['classTwo']" [(ngModel)]="date2" [showIcon]="true"></p-calendar> <span style="margin-left:35px">{{date2|date}}</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
