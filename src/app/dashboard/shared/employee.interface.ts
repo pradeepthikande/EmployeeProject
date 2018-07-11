@@ -1,4 +1,4 @@
-export class Employee {
+export interface Employee {
     sno:string;
     firstName:string;
     lastName:string;

@@ -8,9 +8,10 @@ import { Employee } from '../shared/employee.interface';
   encapsulation: ViewEncapsulation.None
 })
 export class EmployeegridTableComponent implements OnInit {
-  employees: Employee[];
-  emp: any[];
+  // employees: Employee[];
+  emp: Employee[];
   cols: any[];
+  errorMessage : string;
 
   constructor(private employeeService: EmployeeService) {
     this.loadEmployee.bind(this);
@@ -30,93 +31,13 @@ export class EmployeegridTableComponent implements OnInit {
     this.loadEmployee();
   }
   loadEmployee() {
-    var that = this;
-    this.emp = [
-      {
-        sno: '01',
-        firstName: 'Phani',
-        lastName: 'Rahul',
-        emailId: 'rahul.sivalenka@walkingtree.tech',
-        dept: 'Software Engineer',
-        designation: 'developer',
-        joinDate: '31-dec-2018',
-        details: 'View Details'
-      },
-      {
-        sno: '01',
-        firstName: 'Phani',
-        lastName: 'Rahul',
-        emailId: 'rahul.sivalenka@walkingtree.tech',
-        dept: 'Software Engineer',
-        designation: 'developer',
-        joinDate: '31-dec-2018',
-        details: 'View Details'
-      },
-      {
-        sno: '01',
-        firstName: 'Phani',
-        lastName: 'Rahul',
-        emailId: 'rahul.sivalenka@walkingtree.tech',
-        dept: 'Software Engineer',
-        designation: 'developer',
-        joinDate: '31-dec-2018',
-        details: 'View Details'
-      },
-      {
-        sno: '01',
-        firstName: 'Phani',
-        lastName: 'Rahul',
-        emailId: 'rahul.sivalenka@walkingtree.tech',
-        dept: 'Software Engineer',
-        designation: 'developer',
-        joinDate: '31-dec-2018',
-        details: 'View Details'
-      },
-      {
-        sno: '01',
-        firstName: 'Phani',
-        lastName: 'Rahul',
-        emailId: 'rahul.sivalenka@walkingtree.tech',
-        dept: 'Software Engineer',
-        designation: 'developer',
-        joinDate: '31-dec-2018',
-        details: 'View Details'
-      },
-      {
-        sno: '01',
-        firstName: 'Phani',
-        lastName: 'Rahul',
-        emailId: 'rahul.sivalenka@walkingtree.tech',
-        dept: 'Software Engineer',
-        designation: 'developer',
-        joinDate: '31-dec-2018',
-        details: 'View Details'
-      },
-      {
-        sno: '01',
-        firstName: 'Phani',
-        lastName: 'Rahul',
-        emailId: 'rahul.sivalenka@walkingtree.tech',
-        dept: 'Software Engineer',
-        designation: 'developer',
-        joinDate: '31-dec-2018',
-        details: 'View Details'
-      },
-      {
-        sno: '01',
-        firstName: 'Phani',
-        lastName: 'Rahul',
-        emailId: 'rahul.sivalenka@walkingtree.tech',
-        dept: 'Software Engineer',
-        designation: 'developer',
-        joinDate: '31-dec-2018',
-        details: 'View Details'
-      }
-    ];
-    // this.employeeService.getEmployee().then(function(employee) {
-    //   console.log(employee);
-    //   that.emp = <any>employee;
-    //   console.log(that.emp);
-    // });
-  }
+    var that=this;
+      this.employeeService.getEmployee().then(function(employee) {
+        console.log(employee);
+        that.emp = employee.employee;
+    });
+  //   this.employeeService.getEmployee().subscribe(
+  //               data => this.employees = data,
+  //               error =>  this.errorMessage = <any>error);
+  // }
 }
