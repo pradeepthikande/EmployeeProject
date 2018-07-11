@@ -37,6 +37,8 @@ import { BenchEmpComponent} from "../modules/shared-module/bench-emp/bench-emp.c
 
 import { NonBillableEmpComponent } from "../modules/shared-module/non-billable-emp/non-billable-emp.component";
 import { TotalEmployeesComponent } from "../modules/shared-module/total-employees/total-employees.component";
+import {FieldsetModule} from 'primeng/fieldset';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -69,7 +71,10 @@ import { TotalEmployeesComponent } from "../modules/shared-module/total-employee
     ButtonModule,
     HttpClientModule,TabViewModule,
     CalendarModule,
-    RadioButtonModule
+    RadioButtonModule,
+    HttpClientModule,
+    TabViewModule,
+    FieldsetModule
   ],
 
   providers: [EmployeeService,

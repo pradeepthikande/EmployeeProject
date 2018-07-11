@@ -6,9 +6,17 @@ import { WorkDetailsComponent } from './add-employee/work-details/work-details.c
 import { PersonalDetailsComponent } from './add-employee/personal-details/personal-details.component';
 import { AccessDetailsComponent } from './add-employee/access-details/access-details.component';
 
+// import { AccessDetailsComponent } from './add-employee/access-details/access-details.component';
+import {PanelModule} from 'primeng/primeng';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {FieldsetModule} from 'primeng/fieldset';
+// import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    FieldsetModule,
+    PanelModule,
+    BrowserAnimationsModule
   ],
   declarations: [AddEmployeeComponent,
       AddressDetailsComponent,
