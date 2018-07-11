@@ -1,6 +1,3 @@
-<!--<p>
-  dashboard works!
-</p>-->
 <div class="ui-g">
   <div class="ui-g-12 " [ngClass]="['header-div']">
 
@@ -14,42 +11,42 @@
   <div class="ui-g-12 ui-md-10" [ngClass]="['employeeId-div']">
 
     <app-employeegrid></app-employeegrid>
-   <button pButton label="Add New" (click)="onClick($event)"></button>
+    <button pButton label="Add New" (click)="onClick($event)"></button>
 
-<p-dialog [visible]="visible" [modal]="true">
-  <p-tabView>
+    <p-dialog  [visible]="visible" [modal]="true">
+      <p-tabView>
 
-  <p-tabPanel header="Employee">
-    <app-add-employee></app-add-employee>
-     </p-tabPanel>
-  
-
- <p-tabPanel header="Work Details">
-     <app-work-details></app-work-details>
-    </p-tabPanel>
-    
-
- <p-tabPanel header="Personal Details">
-      <app-personal-details></app-personal-details>
-    </p-tabPanel>
-
-    <p-tabPanel header="Address">
-      <app-address-details></app-address-details>
-    </p-tabPanel>
-
-    <p-tabPanel header="Access Details">
-      <app-access-details></app-access-details>
-      </p-tabPanel>
+        <p-tabPanel  header="Employee">
+          <app-add-employee></app-add-employee>
+        </p-tabPanel>
 
 
-    </p-tabView>
-<div class="ui-g">
-<div class="ui-g-2"></div>
-<button [ngClass]="['classOne']" pButton type="button" label="Previous"></button>
-<button [ngClass]="['classTwo']" pButton type="button" label="Next"></button>
+        <p-tabPanel header="Work Details">
+          <app-work-details></app-work-details>
+        </p-tabPanel>
 
-</div>
-  </p-dialog>
+
+        <p-tabPanel header="Personal Details">
+          <app-personal-details></app-personal-details>
+        </p-tabPanel>
+
+        <p-tabPanel header="Address">
+          <app-address-details></app-address-details>
+        </p-tabPanel>
+
+        <p-tabPanel header="Access Details">
+          <app-access-details></app-access-details>
+        </p-tabPanel>
+
+
+      </p-tabView>
+      <div class="ui-g">
+        <div class="ui-g-2"></div>
+        <button [ngClass]="['classOne']" pButton type="button" label="Previous"></button>
+        <button [ngClass]="['classTwo']" pButton type="button" label="Next"></button>
+
+      </div>
+    </p-dialog>
 
 
   </div>
