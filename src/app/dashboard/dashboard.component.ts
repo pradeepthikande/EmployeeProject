@@ -8,13 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class DashboardComponent implements OnInit {
 
 
-  // visible=false;
-  //  counter: number = 0;
+  visible=false;
+   counter: number = 0;
    
-  //  onClick() {
-  //     this.counter++;
-  //     this.visible=!this.visible;
-  //  }
+   onClick() {
+      this.counter++;
+      this.visible=!this.visible;
+   }
   constructor() { }
 
   ngOnInit() {

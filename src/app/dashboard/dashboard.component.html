@@ -14,16 +14,43 @@
   <div class="ui-g-12 ui-md-10" [ngClass]="['employeeId-div']">
 
     <app-employeegrid></app-employeegrid>
-    <!--<button pButton type="button" label="Add New "></button>-->
-    <!--<button pButton label="Add New" (click)="onClick($event)"></button>-->
-    <!--<p-dialog header="Test" [visible]="visible" [modal]="true">
-      <ol>
-        <li>A</li>
-        <li>A</li>
-      </ol>
+   <button pButton label="Add New" (click)="onClick($event)"></button>
 
-    </p-dialog>-->
+<p-dialog [visible]="visible" [modal]="true">
+  <p-tabView>
+
+  <p-tabPanel header="Employee">
+    <app-add-employee></app-add-employee>
+     </p-tabPanel>
+  
+
+ <p-tabPanel header="Work Details">
+     <app-work-details></app-work-details>
+    </p-tabPanel>
+    
+
+ <p-tabPanel header="Personal Details">
+      <app-personal-details></app-personal-details>
+    </p-tabPanel>
+
+    <p-tabPanel header="Address">
+      <app-address-details></app-address-details>
+    </p-tabPanel>
+
+    <p-tabPanel header="Access Details">
+      <app-access-details></app-access-details>
+      </p-tabPanel>
+
+
+    </p-tabView>
+<div class="ui-g">
+<div class="ui-g-2"></div>
+<button [ngClass]="['classOne']" pButton type="button" label="Previous"></button>
+<button [ngClass]="['classTwo']" pButton type="button" label="Next"></button>
+
+</div>
+  </p-dialog>
+
 
   </div>
 </div>
-<button pButton type="button" label="Click"></button>

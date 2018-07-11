@@ -15,3 +15,19 @@
 .employeeId-div{
     background-color: #302F74;
 }
+
+
+.classTwo {
+  width: 35%;
+  height: 40px;
+  background: linear-gradient(45deg, #34ccc6, #92e2f9);
+  font-size: 15px;
+  margin-top: 40px
+}
+.classOne {
+  width: 35%;
+  height: 40px;
+  background-color: #B8B8DB;
+  font-size: 15px;
+  /*margin-top: 40px*/
+}

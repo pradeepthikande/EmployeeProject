@@ -1,15 +1,19 @@
-<p>
-  add-employee works!
-</p>
 
-<div class="ui-g-12">
- <ul class="nav navbar-nav">
-      <li><a href="#">Employee</a></li>
-      <li><a routerLink=" ">Work Details</a></li>
-      <li><a routerLink=" ">Personal Details</a></li>
-      <li><a routerLink=" ">Address</a></li>
-      <li><a routerLink=" ">Access Details</a></li>
-    </ul>
+<div class="ui-g">
+<div class="ui-g-2"></div>
 
-
+<div class="ui-g-4">
+<input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [(ngModel)]="text" placeholder="First Name">
+</div>
+<div class="ui-g-4">
+<input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [(ngModel)]="text" placeholder="Last Name">
+</div>
+<div class="ui-g-2"></div>
+</div>
+<div class="ui-g">
+<div class="ui-g-2"></div>
+<div class="ui-g-8">
+  <input [ngClass]="['classTwo']" id="in" type="text" size="30" pInputText [(ngModel)]="text" placeholder="Email ID ">
+</div>
+<div class="ui-g-2"></div>
 </div>
