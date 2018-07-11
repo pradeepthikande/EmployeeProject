@@ -1,18 +1,15 @@
 
-<div class="ui-g">
-  <div class="ui-g-12 ui-md-3">
+
+  <div class="ui-g">
     <div class="ui-g" [ngClass]="['ShadowEmployee']">
         <div class="ui-g-3" [ngClass]="['ShadowEmployee-icon']" style=" background-color: #8359FF">
-          <i class="pi pi-exclamation-circle"></i><br>
-          <i class="pi pi-users"></i>
+          <img src="/assets/Icons/Shadow Employee.svg" alt="ShadowEmployee" width="50px" height="50px">
         </div>
         <div class="ui-g-9" [ngClass]="['ShadowEmployee-text']">
           <p>ShadowEmployee</p><br>
-          <button (click)="Status()" type="submit" style="border-radius:50%;font-size:30px">{{this.count}}</button>
-          
+          <!--<button (click)="Status()" type="submit" >{{this.count}}</button>-->
+          <p>{{this.count}}</p>
           </div>
-       
       </div>
   </div>
 
-</div>

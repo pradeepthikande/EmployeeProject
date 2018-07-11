@@ -30,6 +30,8 @@ import{WorkDetailsComponent} from '../modules/add-employee-module/add-employee/w
 import { CommonModule } from '@angular/common';
 // import { ShadowEmpComponent } from '../../modules/shared-module/shadow-emp';
 import { ShadowEmpComponent} from "../modules/shared-module/shadow-emp/shadow-emp.component";
+import { BenchEmpComponent} from "../modules/shared-module/bench-emp/bench-emp.component";
+
 import { NonBillableEmpComponent } from "../modules/shared-module/non-billable-emp/non-billable-emp.component";
 import { TotalEmployeesComponent } from "../modules/shared-module/total-employees/total-employees.component";
 @NgModule({
@@ -47,6 +49,7 @@ import { TotalEmployeesComponent } from "../modules/shared-module/total-employee
     WorkDetailsComponent,
     PersonalDetailsComponent,
     ShadowEmpComponent,
+    BenchEmpComponent,
     NonBillableEmpComponent,
     TotalEmployeesComponent
   ],

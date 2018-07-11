@@ -10,13 +10,16 @@ import { EmployeeService} from '../../../app/dashboard/shared/employee.service';
   styleUrls: ['./shadow-emp.component.css']
 })
 export class ShadowEmpComponent implements OnInit {
-count:number=8;
+ count:number;
 constructor(private employeeService: EmployeeService ) { }
+//   Status() {
+//    this.count= this.employeeService.getStatus(this.count);
+// }
   Status() {
-   this.count= this.employeeService.getStatus(this.count++);
+   this.count= this.employeeService.getStatus('shadow');
 }
   ngOnInit() {
-  
+  this.Status();
 }
 
 
