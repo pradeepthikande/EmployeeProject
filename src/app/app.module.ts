@@ -24,6 +24,12 @@ import{AddressDetailsComponent} from '../modules/add-employee-module/add-employe
 import{PersonalDetailsComponent} from '../modules/add-employee-module/add-employee/personal-details/personal-details.component'
 import{WorkDetailsComponent} from '../modules/add-employee-module/add-employee/work-details/work-details.component'
 
+
+import { CommonModule } from '@angular/common';
+// import { ShadowEmpComponent } from '../../modules/shared-module/shadow-emp';
+import { ShadowEmpComponent} from "../modules/shared-module/shadow-emp/shadow-emp.component";
+import { NonBillableEmpComponent } from "../modules/shared-module/non-billable-emp/non-billable-emp.component";
+import { TotalEmployeesComponent } from "../modules/shared-module/total-employees/total-employees.component";
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +43,10 @@ import{WorkDetailsComponent} from '../modules/add-employee-module/add-employee/w
     AccessDetailsComponent,
     AddressDetailsComponent,
     WorkDetailsComponent,
-    PersonalDetailsComponent
+    PersonalDetailsComponent,
+    ShadowEmpComponent,
+    NonBillableEmpComponent,
+    TotalEmployeesComponent
   ],
   imports: [
     BrowserModule,

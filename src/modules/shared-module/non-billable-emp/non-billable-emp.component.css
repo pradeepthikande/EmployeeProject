@@ -1,8 +1,12 @@
+*{
+    font-family: Roboto, Regular;
+}
+
 .ShadowEmployee {
-  border: 2px solid gray;
+
   border-radius: 10px;
 }
-/*.ShadowEmployee-icon {
+.ShadowEmployee-icon {
   border-right: 2px solid gray;
  text-align: center;
  padding-top:15%;
@@ -17,14 +21,4 @@
   background-color:white; 
   border-radius:50px; 
   color:black
-}
-.pi-th-large{
- font-size: 30%;
-}*/
-.employeeTable{
-  background-color: #5453A4;
-  padding-left: 10px;
-  padding-right: 10px;
-    border-radius: 10px;
-    padding-bottom:10px; 
 }

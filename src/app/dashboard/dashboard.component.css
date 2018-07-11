@@ -4,13 +4,13 @@
   opacity: 100%;
 }
 .header-div {
-  border-bottom: 2px solid grey;
+border-bottom: 2px solid #302F74;
   padding-top: 20px;
   /*box-shadow: 10px 10px solid grey;*/
 }
 .sidemenu-div{
     height: 1004px;
-    border-right: 2px solid grey;
+    /*border-right: 2px solid grey;*/
 }
 .employeeId-div{
     background-color: #302F74;
@@ -33,6 +33,8 @@
 }
 .classThree{
 
-margin-left: 10px
+margin-left: 10px;
 
+   padding-left: 20px;
+   padding-right: 20px;
 }

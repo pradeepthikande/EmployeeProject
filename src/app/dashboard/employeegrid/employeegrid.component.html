@@ -4,7 +4,7 @@
 
 
 
-<!--<<div>
+<!--<div>
   <div class="ui-g">
     <div class="ui-g-12 ui-md-3">
       <div class="ui-g" [ngClass]="['ShadowEmployee']">
@@ -56,9 +56,27 @@
       </div>
     </div>
 
+  </div>-->
+<!--<div class="ui-g">
+  <div class="ui-g-12 ui-md-3">
+    <app-shadow-emp></app-shadow-emp>
   </div>
-  <div class="ui-g">
-    <app-employeegrid-table [ngClass]="['employeeTable']"></app-employeegrid-table>
+  <div class="ui-g-12 ui-md-3">
+    <app-non-billable-emp></app-non-billable-emp>
   </div>
 </div>-->
 <!--<app-shadow-emp></app-shadow-emp>-->
+<div class="ui-g">
+  <div class="ui-g-12">
+<app-shadow-emp></app-shadow-emp>
+  </div>
+  <div class="ui-g-12">
+ <app-non-billable-emp></app-non-billable-emp>
+  </div>
+   <div class="ui-g-12">
+ <app-total-employees></app-total-employees>
+  </div>
+</div>
+<div class="ui-g">
+  <app-employeegrid-table [ngClass]="['employeeTable']"></app-employeegrid-table>
+</div>

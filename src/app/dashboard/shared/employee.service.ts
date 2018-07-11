@@ -9,6 +9,10 @@ import { Employee } from './employee.interface';
 })
 export class EmployeeService {
   constructor(private http: HttpClient) {}
+
+
+
+
   getEmployee() {
     return this.http
       .get('assets/employee.json')
