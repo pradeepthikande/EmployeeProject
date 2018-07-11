@@ -1,15 +1,15 @@
 <!--<p>
   total-employees works!
 </p>-->
-<div class="ui-g-12 ui-md-3">
-      <div class="ui-g" [ngClass]="['ShadowEmployee']">
-        <div class="ui-g-3" [ngClass]="['ShadowEmployee-icon']" style=" background-color: #FFAD00">
-          <i class="pi pi-check-circle"></i><br>
-          <i class="pi pi-users"></i>
-        </div>
-        <div class="ui-g-9" [ngClass]="['ShadowEmployee-text']">
-          <p>Total Employees</p><br>
-          <i class="pi pi-circle" [ngClass]="['numberBox']">21</i></div>
+<div class="ui-g">
+  <div class="ui-g" [ngClass]="['ShadowEmployee']">
+    <div class="ui-g-3" [ngClass]="['ShadowEmployee-icon']" style=" background-color: #FFAD00">
 
-      </div>
+      <img src="./assets/Icons/Total Employees.svg" alt="Total Employees" width="50px" height="50px">
     </div>
+    <div class="ui-g-9" [ngClass]="['ShadowEmployee-text']">
+      <p>Total Employees</p><br>
+      <button (click)="Status()" type="submit" style="border-radius:50%;font-size:30px">{{this.count}}</button>
+
+    </div>
+  </div>
