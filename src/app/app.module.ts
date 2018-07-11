@@ -39,6 +39,9 @@ import { NonBillableEmpComponent } from "../modules/shared-module/non-billable-e
 import { TotalEmployeesComponent } from "../modules/shared-module/total-employees/total-employees.component";
 import {FieldsetModule} from 'primeng/fieldset';
 
+import {MultiSelectModule} from 'primeng/multiselect';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -74,7 +77,8 @@ import {FieldsetModule} from 'primeng/fieldset';
     RadioButtonModule,
     HttpClientModule,
     TabViewModule,
-    FieldsetModule
+    FieldsetModule,
+    MultiSelectModule
   ],
 
   providers: [EmployeeService,

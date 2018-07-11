@@ -11,12 +11,16 @@ import {PanelModule} from 'primeng/primeng';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {FieldsetModule} from 'primeng/fieldset';
 // import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+import {MultiSelectModule} from 'primeng/multiselect';
+// import {SelectItem} from 'primeng/api';
 @NgModule({
   imports: [
     CommonModule,
     FieldsetModule,
     PanelModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MultiSelectModule,
+    
   ],
   declarations: [AddEmployeeComponent,
       AddressDetailsComponent,
