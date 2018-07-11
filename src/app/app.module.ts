@@ -14,6 +14,8 @@ import { EmployeegridTableComponent } from './dashboard/employeegrid-table/emplo
 import { TableModule } from 'primeng/table';
 import { EmployeeService } from './dashboard/shared/employee.service';
 import {DialogModule} from 'primeng/primeng';
+
+
 import { CheckboxModule } from 'primeng/primeng';
 import { AppRoutingModule, routingComponents } from './app.routing';
 import { ButtonModule } from 'primeng/primeng';

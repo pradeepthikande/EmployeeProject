@@ -10,6 +10,10 @@ import { PersonalDetailsComponent } from './add-employee/personal-details/person
   imports: [
     CommonModule
   ],
-  declarations: [AddEmployeeComponent, AddressDetailsComponent, WorkDetailsComponent, PersonalDetailsComponent, ]
+  declarations: [AddEmployeeComponent,
+      AddressDetailsComponent,
+      WorkDetailsComponent,
+      PersonalDetailsComponent]
+  
 })
 export class AddEmployeeModuleModule { }

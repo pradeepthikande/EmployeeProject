@@ -22,4 +22,9 @@ export class EmployeeService {
         return <Employee[]>res;
       });
   }
+  getStatus(count){
+    count++;
+    return count;
+  }
+ 
 }

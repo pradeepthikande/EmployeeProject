@@ -1,6 +1,4 @@
-<p>
-  shadow-emp works!
-</p>
+
 <div class="ui-g">
   <div class="ui-g-12 ui-md-3">
     <div class="ui-g" [ngClass]="['ShadowEmployee']">
@@ -10,7 +8,7 @@
         </div>
         <div class="ui-g-9" [ngClass]="['ShadowEmployee-text']">
           <p>ShadowEmployee</p><br>
-          <!--<i class="pi pi-circle" [ngClass]="['numberBox']">08</i>-->
+          <button (click)="Status()" type="submit" style="border-radius:50%;font-size:30px">{{this.count}}</button>
           
           </div>
        
