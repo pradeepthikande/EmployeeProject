@@ -1,6 +1,7 @@
 .text{
     background-color: #302F74;    
     border:none;
+    color:#FFFFFF;
 }
 
 .input1{
@@ -10,6 +11,8 @@
     padding: 10px;
     border-radius: 5px;
     border: none;
+    color:#FFFFFF;
+    
 }
 
 .input2{
@@ -19,4 +22,13 @@
     padding: 10px;
     border-radius: 5px;
     border: none;
+    color:#FFFFFF;
+  
+}
+.data{
+    color:#FFFFFF;
+}
+
+.asd{
+    text-decoration: none;
 }

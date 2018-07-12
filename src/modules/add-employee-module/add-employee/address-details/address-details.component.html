@@ -1,7 +1,7 @@
 <!--<p>
   address-details works!
 </p>-->
-<p-fieldset legend="Current Details" [toggleable]="true">
+<p-fieldset legend="Current Details" [toggleable]="true" class="asd">
 
   <div class="ui-g-12">
     <div class="ui-g-2"></div>
@@ -9,7 +9,7 @@
     <!--<p-fieldset legend="current address" [toggleable]="true">-->
     <div class="ui-g-3">
 
-      <h6>Address</h6>
+      <h5 class="data">Address</h5>
       <textarea class="text" rows="5" cols="40" placeholder="Type Here"></textarea><br>
     </div>
 
@@ -39,17 +39,19 @@
   </div>
 </p-fieldset>
 
-<p-fieldset legend="Perminent Details" [toggleable]="true">
+<p-fieldset legend="Perminent Details" [toggleable]="true" class="asd">
 
   <div class="ui-g-12">
 
     <div class="ui-g-2"></div>
     <!--<p-panel [toggleable]="true">-->
     <!--<p-fieldset legend="current address" [toggleable]="true">-->
-    <div class="ui-g-3">
+    <div class="ui-g-10">
+
+
       <input type="checkbox" name="conformation">
       <label>Check If Current Address And Perminent Address Is Same</label>
-      <h6>Address</h6>
+      <h5 class="data">Address</h5>
       <textarea class="text" rows="5" cols="40" placeholder="Type Here"></textarea><br>
     </div>
 
@@ -77,4 +79,5 @@
     </div>
 
   </div>
+
 </p-fieldset>
