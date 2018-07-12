@@ -2,6 +2,7 @@
   background-color: #5453a4;
   color: whitesmoke;
   opacity: 100%;
+  
 }
 .header-div {
 border-bottom: 2px solid #302F74;
@@ -10,10 +11,11 @@ border-bottom: 2px solid #302F74;
 }
 .sidemenu-div{
     height: 1004px;
-    /*border-right: 2px solid grey;*/
+    width:15%;
 }
 .employeeId-div{
     background-color: #302F74;
+     width:85%;
 }
 
 
@@ -37,4 +39,8 @@ margin-left: 10px;
 
    padding-left: 20px;
    padding-right: 20px;
+}
+
+element.style {
+    width: 140px;
 }

@@ -1,11 +1,12 @@
 /*.dropdown{
-   background-color: #5453a4;
+ width:80px
 }*/
 .ui-dropdown .ui-inputtext  {
     background:#5453a4!important;
     color: white;
     transition: .2s;
     /*font-size: 16px;*/
+  
 
 
 }
@@ -13,10 +14,11 @@
     border: 1px solid #5453a4 ;
     background-color:#5453a4;
     color: #555555;
+    
 }
 .ui-dropdown{
         border:1px solid #5453a4;
-        width:100px;
+        /*width:100px;*/
 }
 .ui-widget-content {
     border: 1px solid #D5D5D5;
@@ -32,7 +34,7 @@
 }
 .ui-widget, .ui-widget * {
     box-sizing: border-box; 
-
+    /*width:100px*/
 }
 .sidemenu-div[_ngcontent-c2] {
     height: 1004px;
