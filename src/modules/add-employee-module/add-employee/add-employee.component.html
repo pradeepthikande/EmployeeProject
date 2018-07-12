@@ -17,3 +17,9 @@
 </div>
 <div class="ui-g-2"></div>
 </div>
+<div class="ui-g">
+        <div class="ui-g-2"></div>
+      
+        <button [ngClass]="['classT']" (click)="changePage()" pButton type="button" label="Next"></button>
+        <app-work-details *ngIf="currentpage>0" [Currentpage]='currentpage'></app-work-details>
+      </div>

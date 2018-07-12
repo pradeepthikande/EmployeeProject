@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 
 @Component({
   selector: 'app-work-details',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./work-details.component.css']
 })
 export class WorkDetailsComponent implements OnInit {
-
+@Input() Currentpage:number
   selectedDepartment: string;
   department;
   constructor() {

@@ -15,3 +15,10 @@
   width: 100%
   /*margin-left: 30px*/
 }
+
+.classT {
+  width: 35%;
+  height: 40px;
+  background: linear-gradient(45deg, #34ccc6, #92e2f9);
+  font-size: 15px;
+}

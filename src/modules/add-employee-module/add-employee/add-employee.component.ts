@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import {Employee} from '../../../app/dashboard/shared/employee.interface';
 
 
 
@@ -8,6 +9,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-employee.component.css']
 })
 export class AddEmployeeComponent implements OnInit {
+@Input() employee:Employee
+// visible=false;
+// public currentpage=0;
+
+//  public changePage() {
+//         this.currentpage++;
+        
+//       }
 
 
 
@@ -15,5 +24,4 @@ export class AddEmployeeComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

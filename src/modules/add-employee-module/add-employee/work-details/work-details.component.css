@@ -17,3 +17,18 @@
 
     margin-left: 10px
 }
+
+
+.classT {
+  width: 35%;
+  height: 40px;
+  background: linear-gradient(45deg, #34ccc6, #92e2f9);
+  font-size: 15px;
+}
+
+.classO {
+  width: 35%;
+  height: 40px;
+  background-color: #b8b8db;
+  font-size: 15px;
+}
