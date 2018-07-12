@@ -61,10 +61,6 @@ this.currentpage--
     roles: ''
   };
 
-  //  employee.firstName
-
- 
- 
   ngOnInit() {
   }
 }
