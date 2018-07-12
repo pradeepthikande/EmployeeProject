@@ -9,27 +9,39 @@
               <span *ngIf="col.header!=='Details'">{{employee[col.field]}}</span>
         </template>
     </p-column>-->
-    <!--<ng-template pTemplate="header">
+    <ng-template pTemplate="header">
       <tr>
         <th *ngFor="let col of cols">
           {{col.header}}
         </th>
       </tr>
-    </ng-template>-->
-    <!--<ng-template pTemplate="body" let-employee>-->
-    <!--<tr>
-        <td *ngFor="let col of cols">  {{employee[col.field]}}
+    </ng-template>
+    <ng-template pTemplate="body" let-employee let-details="rowData" let-i="rowIndex" >
+      <tr>
+        <td *ngFor="let col of cols">
+          <span *ngIf="col.field==='details'"><a href="#" (click)="show(i)">VIEW DETAILS</a></span>
+          <span *ngIf="col.field!=='details'">{{employee[col.field]}}</span>
         </td>
-      </tr>-->
-    <p-column *ngFor="let col of cols" [field]="col.field" [header]="col.header">
+      </tr>
+       </ng-template>
+
+ 
+<!--<p-column *ngIf="employee[col.field]==='details'"  field="details" header="Details">
+<ng-template let-row="rowData" pTemplate="body">
+<a href="www.google.com">Click me</a>
+</ng-template>
+</p-column>-->
+ 
+
+      <!--<p-column *ngFor="let col of cols" [field]="col.field" [header]="col.header">
       <ng-template let-d let-row="rowData" pTemplate="body">
         <span>View Details</span>
-        <!--<span>{{row[d.field]}}</span>-->
-      </ng-template>
-    </p-column>
+        <span>{{row[d.field]}}</span>-->
+      <!--</ng-template>
+    </p-column>-->
 
-    <!--{{employee.sno}}-->
-    <!--</ng-template>-->
+      <!--{{employee.sno}}-->
+   
     <!--<ng-template *ngIf="col.field==='details'" let-employee let-details="rowData"  pTemplate="body">
           <a href="#" (click)="onClick($event)">view details</a>
        </ng-template>        -->

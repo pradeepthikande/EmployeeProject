@@ -12,8 +12,12 @@ export class EmployeegridTableComponent implements OnInit {
   emp: Employee[];
   cols: any[];
   errorMessage : string;
-
-
+visible=false;
+  value:Employee;
+show(i){
+ this.visible=true;
+ this.value=this.emp[i];
+}
 
 
   constructor(private employeeService: EmployeeService) {
