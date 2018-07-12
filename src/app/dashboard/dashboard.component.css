@@ -4,8 +4,9 @@
   opacity: 100%;
   
 }
+
 .header-div {
-border-bottom: 2px solid #302F74;
+  border-bottom: 2px solid #302f74;
   padding-top: 20px;
   /*box-shadow: 10px 10px solid grey;*/
 }
@@ -18,29 +19,31 @@ border-bottom: 2px solid #302F74;
      width:85%;
 }
 
-
 .classTwo {
   width: 35%;
   height: 40px;
   background: linear-gradient(45deg, #34ccc6, #92e2f9);
   font-size: 15px;
-  margin-top: 40px
 }
+
 .classOne {
   width: 35%;
   height: 40px;
-  background-color: #B8B8DB;
+  background-color: #b8b8db;
   font-size: 15px;
-  
 }
-.classThree{
 
-margin-left: 10px;
+.classThree {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
-   padding-left: 20px;
+   /*padding-left: 20px;
    padding-right: 20px;
 }
 
 element.style {
-    width: 140px;
+    width: 140px;*/
+*[_ngcontent-c1] {
+    background-color: #393975;
 }

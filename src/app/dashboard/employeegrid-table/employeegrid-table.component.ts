@@ -44,8 +44,9 @@ show(i){
         this.emp = data.employee;
       });
     }
-}
 
+
+    };
   //   this.employeeService.getEmployee().subscribe(
   //               data => this.employees = data,
   //               error =>  this.errorMessage = <any>error);

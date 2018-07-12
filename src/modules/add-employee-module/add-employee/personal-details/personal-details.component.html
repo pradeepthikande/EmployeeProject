@@ -4,7 +4,7 @@
     <div class="ui-grid ui-grid-responsive ui-fluid">
       <div class="ui-grid-row">
         <div class="ui-grid-col-4">
-          <small>Joining Date</small>
+          <small>Date of Birth</small>
           <p-calendar [(ngModel)]="date2" [showIcon]="true"></p-calendar> <span style="margin-left:35px">{{date2|date}}</span>
         </div>
 
@@ -23,54 +23,55 @@
     </div>
   </div>
 
+</div>
 
-
-  <div class="ui-g">
-    <div class="ui-g-2"></div>
-
-    <div class="ui-g-10">
-      <div class="ui-grid ui-grid-responsive ui-fluid">
-        <div class="ui-grid-row">
-          <div class="ui-grid-col-12">
-
-            <p-dropdown [options]="department" [autoWidth]="false" [(ngModel)]="selectedDepartment" placeholder="select department">
-
-            </p-dropdown>
-
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-  <!--
 <div class="ui-g">
-  <div class="ui-g-4"></div>
-
-  <div class="ui-g-4">
+  <div class="ui-g-2"></div>
+  <div class="ui-g-10">
     <div class="ui-grid ui-grid-responsive ui-fluid">
       <div class="ui-grid-row">
-        <div class="ui-grid-col-12">
-          <label>status</label>
-          <p-dropdown [options]="department" [autoWidth]="false" [(ngModel)]="selectedDepartment" placeholder="Select Status">
+        <div class="ui-grid-col-4">
+          <small>Marital Status</small>
+          <p-dropdown [options]="department" [autoWidth]="false" [(ngModel)]="selectedDepartment" placeholder="select department">
 
           </p-dropdown>
-
         </div>
+        <div class="ui-grid-col-4" style="margin-top:0px;margin-left:22px">
+          <small>Date of Birth</small>
+          <p-calendar [(ngModel)]="date2" [showIcon]="true"></p-calendar> <span style="margin-left:35px">{{date2|date}}</span>
+        </div>
+
       </div>
 
     </div>
+
   </div>
-</div></div>-->
+</div>
+<div class="ui-g">
+  <div class="ui-g-2"></div>
+
+  <div class="ui-g-4">
+    <small>Phone No</small>
+    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [(ngModel)]="text" placeholder="First Name">
+  </div>
+  <div class="ui-g-4" style="margin-left:20px">
+    <small>Blood Group</small>
+    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [(ngModel)]="text" placeholder="Last Name">
+  </div>
+  <div class="ui-g-2"></div>
+</div>
+
+
+<div class="ui-g">
+  <div class="ui-g-2"></div>
+
+  <div class="ui-g-4">
+    <small>Pan No</small>
+    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [(ngModel)]="text" placeholder="First Name">
+  </div>
+  <div class="ui-g-4" style="margin-left:20px">
+    <small>Aadar No</small>
+    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [(ngModel)]="text" placeholder="Last Name">
+  </div>
+  <div class="ui-g-2"></div>
+</div>

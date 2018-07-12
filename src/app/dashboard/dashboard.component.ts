@@ -7,17 +7,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-
   visible=false;
    counter: number = 0;
-   
+   public currentpage = 0;
+
    onClick() {
       this.counter++;
       this.visible=!this.visible;
    }
+
+
+
+
+ public changePage() {
+        this.currentpage++;
+      }
+
+
+prevPage(){
+this.currentpage--
+}
+
   constructor() { }
 
   ngOnInit() {
   }
-
 }
