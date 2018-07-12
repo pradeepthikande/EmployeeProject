@@ -13,7 +13,8 @@
     <app-employeegrid></app-employeegrid>
     <button pButton label="Add New" (click)="onClick($event)"></button>
 
-    <p-dialog [visible]="visible" [modal]="true">
+    <p-dialog [visible]="visible" [modal]="true" closable="false">
+      
       <p-tabView>
 
         <p-tabPanel header="Employee" [selected]="currentpage == 0">
@@ -43,8 +44,8 @@
       <div class="ui-g">
         <div class="ui-g-2"></div>
         <button [ngClass]="['classOne']" (click)="prevPage()" pButton type="button" label="Previous"></button>
-        <button [ngClass]="['classTwo']" (click)="changePage()" pButton type="button" label="Next"></button>
-
+        <button [ngClass]="['classTwo']" *ngIf="currentpage<=3" (click)="changePage()" pButton type="button" label="Next"></button>
+         <button [ngClass]="['classTwo']" *ngIf="currentpage == 4" pButton type="button" label="save"></button>
       </div>
     </p-dialog>
 
