@@ -42,6 +42,7 @@ import {FieldsetModule} from 'primeng/fieldset';
 import {MultiSelectModule} from 'primeng/multiselect';
 
 
+import { ViewDetailsComponent } from './dashboard/employeegrid-table/view-details/view-details.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -59,7 +60,8 @@ import {MultiSelectModule} from 'primeng/multiselect';
     ShadowEmpComponent,
     BenchEmpComponent,
     NonBillableEmpComponent,
-    TotalEmployeesComponent
+    TotalEmployeesComponent,
+    ViewDetailsComponent
   ],
   imports: [
     BrowserModule,

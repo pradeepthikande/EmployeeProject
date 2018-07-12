@@ -8,13 +8,14 @@ import { EmployeeService} from '../../../app/dashboard/shared/employee.service';
 })
 export class TotalEmployeesComponent implements OnInit {
 
-  count:number=155;
+ count:number;
 constructor(private employeeService: EmployeeService ) { }
   Status() {
-   this.count= this.employeeService.getStatus(this.count++);
+   this.count= this.employeeService.getStatus('total');
 }
 
   ngOnInit() {
+     this.Status();
   }
 
 }

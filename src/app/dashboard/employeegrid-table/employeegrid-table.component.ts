@@ -13,6 +13,9 @@ export class EmployeegridTableComponent implements OnInit {
   cols: any[];
   errorMessage : string;
 
+
+
+
   constructor(private employeeService: EmployeeService) {
     // this.loadEmployee.bind(this);
   }
@@ -36,7 +39,7 @@ export class EmployeegridTableComponent implements OnInit {
       console.log(data);
         this.emp = data.employee;
       });
-    });
+    }
   //   this.employeeService.getEmployee().subscribe(
   //               data => this.employees = data,
   //               error =>  this.errorMessage = <any>error);

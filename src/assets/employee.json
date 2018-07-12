@@ -8,9 +8,8 @@
          "emailId": "rahul.sivalenka@walkingtree.tech",
          "dept":"Software Engineer",
          "designation":"3-jul-2017",
-         "joinDate":"31-dec-2018",
-         "details":"View Details"
-
+         "joinDate":"31-dec-2018"
+       
       },
 	
       {
@@ -20,8 +19,8 @@
          "emailId": "rahul.sivalenka@walkingtree.tech",
          "dept":"Software Engineer",
          "designation":"3-jul-2017",
-         "joinDate":"31-dec-2018",
-         "details":"View Details"
+         "joinDate":"31-dec-2018"
+        
 
       },
        {
@@ -31,8 +30,8 @@
          "emailId": "rahul.sivalenka@walkingtree.tech",
          "dept":"Software Engineer",
          "designation":"3-jul-2017",
-         "joinDate":"31-dec-2018",
-         "details":"View Details"
+         "joinDate":"31-dec-2018"
+         
 
       },
        {
@@ -42,9 +41,8 @@
          "emailId": "rahul.sivalenka@walkingtree.tech",
          "dept":"Software Engineer",
          "designation":"3-jul-2017",
-         "joinDate":"31-dec-2018",
-         "details":"View Details"
-
+         "joinDate":"31-dec-2018"
+        
       },
        {
          "sno":"01",
@@ -53,9 +51,8 @@
          "emailId": "rahul.sivalenka@walkingtree.tech",
          "dept":"Software Engineer",
          "designation":"3-jul-2017",
-         "joinDate":"31-dec-2018",
-         "details":"View Details"
-
+         "joinDate":"31-dec-2018"
+         
       },
        {
          "sno":"01",
@@ -64,9 +61,8 @@
          "emailId": "rahul.sivalenka@walkingtree.tech",
          "dept":"Software Engineer",
          "designation":"3-jul-2017",
-         "joinDate":"31-dec-2018",
-         "details":"View Details"
-
+         "joinDate":"31-dec-2018"
+      
       },
        {
          "sno":"01",
@@ -75,9 +71,8 @@
          "emailId": "rahul.sivalenka@walkingtree.tech",
          "dept":"Software Engineer",
          "designation":"3-jul-2017",
-         "joinDate":"31-dec-2018",
-         "details":"View Details"
-
+         "joinDate":"31-dec-2018"
+       
       },
        {
          "sno":"01",
@@ -86,9 +81,8 @@
          "emailId": "rahul.sivalenka@walkingtree.tech",
          "dept":"Software Engineer",
          "designation":"3-jul-2017",
-         "joinDate":"31-dec-2018",
-         "details":"View Details"
-
+         "joinDate":"31-dec-2018"
+      
       },
        {
          "sno":"01",
@@ -97,8 +91,8 @@
          "emailId": "rahul.sivalenka@walkingtree.tech",
          "dept":"Software Engineer",
          "designation":"3-jul-2017",
-         "joinDate":"31-dec-2018",
-         "details":"View Details"
+         "joinDate":"31-dec-2018"
+         
 
       }
    ]

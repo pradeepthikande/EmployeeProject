@@ -8,12 +8,14 @@ import { EmployeeService} from '../../../app/dashboard/shared/employee.service';
 export class NonBillableEmpComponent implements OnInit {
 
   
-count:number=21;
+count:number;
 constructor(private employeeService: EmployeeService ) { }
   Status() {
-   this.count= this.employeeService.getStatus(this.count++);
+   this.count= this.employeeService.getStatus('billable');
 }
+
   ngOnInit() {
+     this.Status();
   }
 
 }
