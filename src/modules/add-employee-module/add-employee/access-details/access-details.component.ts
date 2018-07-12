@@ -8,7 +8,7 @@ import {SelectItem} from 'primeng/api';
 })
 export class AccessDetailsComponent implements OnInit {
 roles: SelectItem[];
-    // selectedCars: string[] = [];
+   selectedRoles: string[] = [];
   constructor() {
        this.roles = [];
         this.roles.push({label: 'Admin', value: 'Admin'});
