@@ -18,7 +18,7 @@ import {
 })
 export class AddressDetailsComponent implements OnInit {
 
-  @Input() employee: Employee;
+  @Input() employee;
 
  
   constructor() { }
