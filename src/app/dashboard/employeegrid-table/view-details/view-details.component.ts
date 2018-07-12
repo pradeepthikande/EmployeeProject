@@ -28,10 +28,12 @@ prevPage(){
 }
 
 
-private test:{BloodGroup:string};
+private test:{BloodGroup:string,PhoneNo:number,AadharNo:number};
   constructor() {
     this.test={
-      BloodGroup:'A'
+      BloodGroup:'A',
+      PhoneNo:123456789,
+      AadharNo:70608090
     }
    }
 

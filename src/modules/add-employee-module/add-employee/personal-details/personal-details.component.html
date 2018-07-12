@@ -34,7 +34,7 @@
       <div class="ui-grid-row">
         <div class="ui-grid-col-4">
           <small>Marital Status</small>
-          <p-dropdown [options]="department" [autoWidth]="false" [(ngModel)]="selectedDepartment" placeholder="select department">
+          <p-dropdown [options]="department" [autoWidth]="false" [(ngModel)]="selectedDepartment" placeholder="select status">
 
           </p-dropdown>
         </div>
@@ -54,12 +54,12 @@
 
   <div class="ui-g-4">
     <small>Phone No</small>
-    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [(ngModel)]="text" placeholder="First Name">
+    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [(ngModel)]="personal.PhoneNo" placeholder="enter phone no">
   </div>
   <div class="ui-g-4" style="margin-left:20px">
     <small>Blood Group</small>
     <!--<p>{{personal.BloodGroup}}</p>-->
-    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [(ngModel)]="personal.BloodGroup" placeholder="Last Name">
+    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [(ngModel)]="personal.BloodGroup" placeholder="enter bloodgroup">
   </div>
   <div class="ui-g-2"></div>
 </div>
@@ -70,11 +70,11 @@
 
   <div class="ui-g-4">
     <small>Pan No</small>
-    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [(ngModel)]="text" placeholder="First Name">
+    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [(ngModel)]="text" placeholder="enter pan no">
   </div>
   <div class="ui-g-4" style="margin-left:20px">
     <small>Aadar No</small>
-    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [(ngModel)]="text" placeholder="Last Name">
+    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [(ngModel)]="personal.AadharNo" placeholder="enter aadhar no">
   </div>
   <div class="ui-g-2"></div>
 </div>
