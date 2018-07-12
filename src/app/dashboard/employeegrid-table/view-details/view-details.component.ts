@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-view-details',
@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./view-details.component.css']
 })
 export class ViewDetailsComponent implements OnInit {
- 
-  constructor() { }
+ @Input() employeeDetails:any;
+@Input() visible:boolean;
+  constructor() { 
+  
+  }
 
   ngOnInit() {
   }

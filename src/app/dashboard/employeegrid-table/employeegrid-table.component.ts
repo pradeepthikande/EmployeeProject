@@ -13,10 +13,12 @@ export class EmployeegridTableComponent implements OnInit {
   cols: any[];
   errorMessage : string;
 visible=false;
-  value:Employee;
+employeeValue:Employee;
+//  i="rowIndex"
+
 show(i){
  this.visible=true;
- this.value=this.emp[i];
+ this.employeeValue=this.emp[i];
 }
 
 

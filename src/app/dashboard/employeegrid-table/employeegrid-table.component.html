@@ -19,14 +19,16 @@
     <ng-template pTemplate="body" let-employee let-details="rowData" let-i="rowIndex">
       <tr>
         <td *ngFor="let col of cols">
-          <span *ngIf="col.field==='details'"><a href="#" (click)="show(i)">VIEW DETAILS</a></span>
+          <span *ngIf="col.field==='details'"><button pButton (click)="show(i)" class="">VIEW DETAILS</button></span>
           <span *ngIf="col.field!=='details'">{{employee[col.field]}}</span>
         </td>
       </tr>
-    </ng-template>
-
-
-    <!--<p-column *ngIf="employee[col.field]==='details'"  field="details" header="Details">
+       </ng-template>
+ </p-table>
+  <app-view-details  [employeeDetails]="employeeValue" [visible]="visible"></app-view-details>
+</div>
+ 
+<!--<p-column *ngIf="employee[col.field]==='details'"  field="details" header="Details">
 <ng-template let-row="rowData" pTemplate="body">
 <a href="www.google.com">Click me</a>
 </ng-template>
@@ -51,13 +53,11 @@
            <div class="camp-group-label-wrapper"><a href="#" label="view details" (click)="onClick($event)">view details</a><span class="camp-group-name">{{details[d.field]}}</span></div>
        </ng-template>
      </p-column>-->
-    <!--</tr>-->
-    <!--{{employee.sno}}-->
-    <!--</ng-template>-->
+    
+      <!--{{employee.sno}}-->
 
-  </p-table>
-  <app-view-details></app-view-details>
-</div>
+    
+ 
 
 <!--<p-dataTable *ngIf="data" class="camp-group-data-table" [value]="responseDetails" sortMode="multiple"  
 [(selection)]="selectedRows" [globalFilter]="gb" #dt>
