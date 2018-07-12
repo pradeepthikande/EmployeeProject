@@ -41,9 +41,9 @@ import {FieldsetModule} from 'primeng/fieldset';
 
 import {MultiSelectModule} from 'primeng/multiselect';
 
-
+import { ReactiveFormsModule } from '@angular/forms';
 import { ViewDetailsComponent } from './dashboard/employeegrid-table/view-details/view-details.component';
-
+// import{Employee} from './dashboard/shared/./employee.interface';
 
 @NgModule({
   declarations: [
@@ -82,7 +82,9 @@ import { ViewDetailsComponent } from './dashboard/employeegrid-table/view-detail
     HttpClientModule,
     TabViewModule,
     FieldsetModule,
-    MultiSelectModule
+    MultiSelectModule,
+    ReactiveFormsModule
+    
   ],
 
   providers: [EmployeeService,

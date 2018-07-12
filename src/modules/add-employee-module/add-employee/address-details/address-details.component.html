@@ -65,7 +65,7 @@
         <div class="ui-g-6">
           <p class="data">State</p>
 
-          <input type="text" class="input2" ([ngModel])="employee.pState" placeholder="State" />
+          <input type="text" class="input2" placeholder="State" />
           <p class="data">Zip Code</p>
 
           <input type="text" class="input2" ([ngModel])="employee.pZipCode" placeholder="ZipCode" />
@@ -80,8 +80,8 @@
 </form>
 
 <div class="ui-g">
-        <div class="ui-g-2"></div>
-        <button [ngClass]="['classO']" (click)="prevPage()" pButton type="button" label="Previous"></button>
-        <button [ngClass]="['classT']" (click)="changePage()" pButton type="button" label="Next"></button>
-        
-      </div>
+  <div class="ui-g-2"></div>
+  <button [ngClass]="['classO']" (click)="prevPage()" pButton type="button" label="Previous"></button>
+  <button [ngClass]="['classT']" (click)="changePage()" pButton type="button" label="Next"></button>
+
+</div>
