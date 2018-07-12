@@ -43,6 +43,8 @@ import {MultiSelectModule} from 'primeng/multiselect';
 
 
 import { ViewDetailsComponent } from './dashboard/employeegrid-table/view-details/view-details.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,

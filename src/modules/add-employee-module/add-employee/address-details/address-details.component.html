@@ -1,83 +1,84 @@
-<!--<p>
-  address-details works!
-</p>-->
-<p-fieldset legend="Current Details" [toggleable]="true" class="asd">
-
-  <div class="ui-g-12">
-    <div class="ui-g-2"></div>
-    <!--<p-panel [toggleable]="true">-->
-    <!--<p-fieldset legend="current address" [toggleable]="true">-->
-    <div class="ui-g-3">
-
-      <h5 class="data">Address</h5>
-      <textarea class="text" rows="5" cols="40" placeholder="Type Here"></textarea><br>
-    </div>
+<!--<form [formGroup]="userForm" (ngSubmit)="onSubmit(userForm)" novalidate>-->
+<form>
+  <p-fieldset legend="Current Details" [toggleable]="true" class="asd">
 
     <div class="ui-g-12">
       <div class="ui-g-2"></div>
-
+      <!--<p-panel [toggleable]="true">-->
+      <!--<p-fieldset legend="current address" [toggleable]="true">-->
       <div class="ui-g-3">
-        <p class="data">Country</p>
-        <input type="text" class="input1" placeholder="country" />
-        <!--<div class="ui-g-8">-->
-        <p class="data">City</p>
 
-        <input type="text" class="input1" placeholder="City" />
+        <h5 class="data">Address</h5>
+        <textarea class="text" rows="5" cols="40" placeholder="Type Here" ([ngModel])="employee.cAddress"></textarea><br>
       </div>
-      <div class="ui-g-6">
-        <p class="data">State</p>
 
-        <!--<input type="text" class="input" placeholder="state" />-->
-        <input type="text" class="input2" placeholder="State" />
-        <p class="data">Zip Code</p>
+      <div class="ui-g-12">
+        <div class="ui-g-2"></div>
 
-        <input type="text" class="input2" placeholder="ZipCode" />
+        <div class="ui-g-3">
+          <p class="data">Country</p>
+          <input type="text" class="input1" placeholder="country" />
+          <!--<div class="ui-g-8">-->
+          <p class="data">City</p>
+
+          <input type="text" class="input1" placeholder="City" />
+        </div>
+        <div class="ui-g-6">
+          <p class="data">State</p>
+
+          <!--<input type="text" class="input" placeholder="state" />-->
+          <input type="text" class="input2" placeholder="State" />
+          <p class="data">Zip Code</p>
+
+          <input type="text" class="input2" placeholder="ZipCode" />
+        </div>
+
       </div>
 
     </div>
+  </p-fieldset>
 
-  </div>
-</p-fieldset>
-
-<p-fieldset legend="Perminent Details" [toggleable]="true" class="asd">
-
-  <div class="ui-g-12">
-
-    <div class="ui-g-2"></div>
-    <!--<p-panel [toggleable]="true">-->
-    <!--<p-fieldset legend="current address" [toggleable]="true">-->
-    <div class="ui-g-10">
-
-
-      <input type="checkbox" name="conformation">
-      <label>Check If Current Address And Perminent Address Is Same</label>
-      <h5 class="data">Address</h5>
-      <textarea class="text" rows="5" cols="40" placeholder="Type Here"></textarea><br>
-    </div>
+  <p-fieldset legend="Perminent Details" [toggleable]="true" class="asd">
 
     <div class="ui-g-12">
+
       <div class="ui-g-2"></div>
+      <!--<p-panel [toggleable]="true">-->
+      <!--<p-fieldset legend="current address" [toggleable]="true">-->
+      <div class="ui-g-10">
 
-      <div class="ui-g-3">
-        <p class="data">Country</p>
-        <input type="text" class="input1" placeholder="country" />
-        <!--<div class="ui-g-8">-->
-        <p class="data">City</p>
 
-        <input type="text" class="input1" placeholder="City" />
+        <input type="checkbox" name="conformation">
+        <label>Check If Current Address And Perminent Address Is Same</label>
+        <h5 class="data">Address</h5>
+        <textarea class="text" rows="5" cols="40" placeholder="Type Here"></textarea><br>
       </div>
-      <div class="ui-g-6">
-        <p class="data">State</p>
 
-        <!--<input type="text" class="input" placeholder="state" />-->
-        <input type="text" class="input2" placeholder="State" />
-        <p class="data">Zip Code</p>
+      <div class="ui-g-12">
+        <div class="ui-g-2"></div>
 
-        <input type="text" class="input2" placeholder="ZipCode" />
+        <div class="ui-g-3">
+          <p class="data">Country</p>
+          <input type="text" class="input1" placeholder="country" />
+          <!--<div class="ui-g-8">-->
+          <p class="data">City</p>
+
+          <input type="text" class="input1" placeholder="City" />
+        </div>
+        <div class="ui-g-6">
+          <p class="data">State</p>
+
+          <!--<input type="text" class="input" placeholder="state" />-->
+          <input type="text" class="input2" placeholder="State" />
+          <p class="data">Zip Code</p>
+
+          <input type="text" class="input2" placeholder="ZipCode" />
+        </div>
+
       </div>
 
     </div>
 
-  </div>
+  </p-fieldset>
 
-</p-fieldset>
+</form>
