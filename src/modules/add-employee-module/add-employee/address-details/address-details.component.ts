@@ -20,15 +20,10 @@ export class AddressDetailsComponent implements OnInit {
 
   @Input() employee: Employee;
 
-  // firstName=this.employee.firstName;
-  // lastName=this.employee.lastName;
-  // sno=this.employee.sno;
-
-  //  firstName;
-  //  lastName;
+ 
   constructor() { }
-  userForm: FormGroup;
-  submitted: boolean;
+  // userForm: FormGroup;
+  // submitted: boolean;
   ngOnInit() {
     // this.userForm = new FormGroup({
     //   cAddress: new FormControl('', [<any>Validators.required]),

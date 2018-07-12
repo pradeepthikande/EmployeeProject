@@ -17,10 +17,6 @@ roles: SelectItem[];
         this.roles.push({label: 'Developer', value: 'Developer'});
         this.roles.push({label: 'Tester', value: 'Tester'});
         this.roles.push({label: 'Ui-Developer', value: 'Ui-Developer'});
-        // this.cars.push({label: 'Mercedes', value: 'Mercedes'});
-        // this.cars.push({label: 'Renault', value: 'Renault'});
-        // this.cars.push({label: 'VW', value: 'VW'});
-        // this.cars.push({label: 'Volvo', value: 'Volvo'});
    }
 
   ngOnInit() {

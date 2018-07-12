@@ -16,19 +16,19 @@
 
         <div class="ui-g-3">
           <p class="data">Country</p>
-          <input type="text" class="input1" placeholder="country" />
+          <input type="text" class="input1" ([ngModel])="employee.cCountry" placeholder="country" />
 
           <p class="data">City</p>
 
-          <input type="text" class="input1" placeholder="City" />
+          <input type="text" class="input1" ([ngModel])="employee.cCity" placeholder="City" />
         </div>
         <div class="ui-g-6">
           <p class="data">State</p>
 
-          <input type="text" class="input2" placeholder="State" />
+          <input type="text" class="input2" ([ngModel])="employee.cState" placeholder="State" />
           <p class="data">Zip Code</p>
 
-          <input type="text" class="input2" placeholder="ZipCode" />
+          <input type="text" class="input2" ([ngModel])="employee.cZipCode" placeholder="ZipCode" />
         </div>
 
       </div>
@@ -45,10 +45,10 @@
       <div class="ui-g-10">
 
 
-        <input type="checkbox" name="conformation">
+        <input type="checkbox" name="conformation" ([ngModel])="employee.checking">
         <label>Check If Current Address And Perminent Address Is Same</label>
         <h5 class="data">Address</h5>
-        <textarea class="text" rows="5" cols="40" placeholder="Type Here"></textarea><br>
+        <textarea class="text" rows="5" cols="40" placeholder="Type Here" ([ngModel])="employee.pAddress"></textarea><br>
       </div>
 
       <div class="ui-g-12">
@@ -56,19 +56,19 @@
 
         <div class="ui-g-3">
           <p class="data">Country</p>
-          <input type="text" class="input1" placeholder="country" />
+          <input type="text" class="input1" ([ngModel])="employee.pCountry" placeholder="country" />
 
           <p class="data">City</p>
 
-          <input type="text" class="input1" placeholder="City" />
+          <input type="text" class="input1" ([ngModel])="employee.pCity" placeholder="City" />
         </div>
         <div class="ui-g-6">
           <p class="data">State</p>
-          
-          <input type="text" class="input2" placeholder="State" />
+
+          <input type="text" class="input2" ([ngModel])="employee.pState" placeholder="State" />
           <p class="data">Zip Code</p>
 
-          <input type="text" class="input2" placeholder="ZipCode" />
+          <input type="text" class="input2" ([ngModel])="employee.pZipCode" placeholder="ZipCode" />
         </div>
 
       </div>
