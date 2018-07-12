@@ -3,12 +3,7 @@
 </p>
 <div *ngIf="emp">
   <p-table [value]="emp">
-    <!--<p-column *ngFor="let col of cols" [field]="col.field" [header]="col.header">
-        <template let-row="rowData" pTemplate>
-              <span *ngIf="col.header==='Details'"><a style="color:blue;" (click)="onClick()">View Details</a></span>
-              <span *ngIf="col.header!=='Details'">{{employee[col.field]}}</span>
-        </template>
-    </p-column>-->
+   
     <ng-template pTemplate="header">
       <tr>
         <th *ngFor="let col of cols">
@@ -28,58 +23,3 @@
   <app-view-details  [employeeDetails]="employeeValue" [visible]="visible"></app-view-details>
 </div>
  
-<!--<p-column *ngIf="employee[col.field]==='details'"  field="details" header="Details">
-<ng-template let-row="rowData" pTemplate="body">
-<a href="www.google.com">Click me</a>
-</ng-template>
-</p-column>-->
-
-
-    <!--<p-column *ngFor="let col of cols" [field]="col.field" [header]="col.header">
-      <ng-template let-d let-row="rowData" pTemplate="body">
-        <span>View Details</span>
-        <span>{{row[d.field]}}</span>-->
-    <!--</ng-template>
-    </p-column>-->
-
-    <!--{{employee.sno}}-->
-
-    <!--<ng-template *ngIf="col.field==='details'" let-employee let-details="rowData"  pTemplate="body">
-          <a href="#" (click)="onClick($event)">view details</a>
-       </ng-template>        -->
-
-    <!--<p-column *ngFor="let col of cols" [field]="col.field" >
-       <ng-template *ngIf="employee[col.field]==='details'" let-d let-details="rowData" let-i="rowIndex" pTemplate="body">
-           <div class="camp-group-label-wrapper"><a href="#" label="view details" (click)="onClick($event)">view details</a><span class="camp-group-name">{{details[d.field]}}</span></div>
-       </ng-template>
-     </p-column>-->
-<<<<<<< 6d320546f85bc7b7b998b91d2fe7ec65850e705b
-    
-      <!--{{employee.sno}}-->
-
-=======
-      <!--</tr>-->
-      <!--{{employee.sno}}-->
-    <!--</ng-template>-->
->>>>>>> dashboard and address details
-    
- 
-
-<!--<p-dataTable *ngIf="data" class="camp-group-data-table" [value]="responseDetails" sortMode="multiple"  
-[(selection)]="selectedRows" [globalFilter]="gb" #dt>
- 
-      <p-column *ngFor="let col of datatableColumns" [field]="col.field" [header]="col.header" [hidden]="col.hidden" [sortable]="true" >
-
-       <ng-template *ngIf="col.field==='name'" let-d let-name="rowData" let-i="rowIndex" pTemplate="body">
-           <div class="camp-group-label-wrapper"><img src="assets/campaign_group_avatar.svg" class="camp-grop-icon"><span class="camp-group-name">{{name[d.field]}}</span></div>
-       </ng-template>
-       <ng-template *ngIf="col.field==='delivered'" let-d let-name="rowData" let-i="rowIndex" pTemplate="body">
-           {{ name.delivered>1000? name.delivered/1000+'k':name.delivered }}
-       </ng-template>        
-
-   </p-column>
-
-  
-
-  
-</p-dataTable>-->

@@ -8,22 +8,22 @@ import { Employee } from '../shared/employee.interface';
   encapsulation: ViewEncapsulation.None
 })
 export class EmployeegridTableComponent implements OnInit {
-  // employees: Employee[];
+
   emp: Employee[];
   cols: any[];
-  errorMessage : string;
-visible=false;
-employeeValue:Employee;
-//  i="rowIndex"
+  errorMessage: string;
+  visible = false;
+  employeeValue: Employee;
 
-show(i){
- this.visible=true;
- this.employeeValue=this.emp[i];
-}
+
+  show(i) {
+    this.visible = true;
+    this.employeeValue = this.emp[i];
+  }
 
 
   constructor(private employeeService: EmployeeService) {
-    // this.loadEmployee.bind(this);
+
   }
 
   ngOnInit() {
@@ -40,17 +40,10 @@ show(i){
     this.loadEmployee();
   }
   loadEmployee() {
-    // var that=this;
-      this.employeeService.getEmployee().subscribe(data =>{
+
+    this.employeeService.getEmployee().subscribe(data => {
       console.log(data);
-        this.emp = data.employee;
-      });
-    }
-
-
-    };
-  //   this.employeeService.getEmployee().subscribe(
-  //               data => this.employees = data,
-  //               error =>  this.errorMessage = <any>error);
-  // }
-
+      this.emp = data.employee;
+    });
+  }
+};
