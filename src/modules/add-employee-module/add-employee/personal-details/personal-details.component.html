@@ -6,7 +6,9 @@
         <div class="ui-grid-col-4">
           <small>Date of Birth</small>
           <p-calendar [(ngModel)]="date2" [showIcon]="true"></p-calendar> <span style="margin-left:35px">{{date2|date}}</span>
+          
         </div>
+
 
         <div class="class3">
           <p style="margin-top:10px;margin-left:10px">Gender</p>
@@ -56,7 +58,8 @@
   </div>
   <div class="ui-g-4" style="margin-left:20px">
     <small>Blood Group</small>
-    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [(ngModel)]="text" placeholder="Last Name">
+    <!--<p>{{personal.BloodGroup}}</p>-->
+    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [(ngModel)]="personal.BloodGroup" placeholder="Last Name">
   </div>
   <div class="ui-g-2"></div>
 </div>

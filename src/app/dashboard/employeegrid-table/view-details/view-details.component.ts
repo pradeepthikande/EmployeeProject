@@ -26,7 +26,14 @@ changePage() {
 prevPage(){
         this.currentpage--
 }
-  constructor() { }
+
+
+private test:{BloodGroup:string};
+  constructor() {
+    this.test={
+      BloodGroup:'A'
+    }
+   }
 
   ngOnInit() {
   }
