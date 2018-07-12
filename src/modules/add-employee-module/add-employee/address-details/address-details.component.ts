@@ -18,8 +18,7 @@ import {
 })
 export class AddressDetailsComponent implements OnInit {
 
-  @Input() employee;
-
+  @Input() employee: Employee;
  
   constructor() { }
   // userForm: FormGroup;
@@ -38,6 +37,11 @@ export class AddressDetailsComponent implements OnInit {
     // })
 
   }
+  onNextPageClick(){
+    
+  }
+
+
 
   //  onSubmit({ value, valid }: { value: userForm, valid: boolean }) {
   //   this.submitted = true;
