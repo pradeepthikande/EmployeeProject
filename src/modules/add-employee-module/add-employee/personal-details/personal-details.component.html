@@ -5,7 +5,10 @@
       <div class="ui-grid-row">
         <div class="ui-grid-col-4">
           <small>Date of Birth</small>
-          <p-calendar [(ngModel)]="date2" [showIcon]="true"></p-calendar> <span style="margin-left:35px">{{date2|date}}</span>
+          
+          <p-calendar [(ngModel)]="employeeValue.expSeparatedDate" [showIcon]="true"></p-calendar> 
+          <!--<span style="margin-left:35px">{{employeeValue.expSeparatedDate|date}}</span>-->
+          
         </div>
 
         <div class="class3">
@@ -13,10 +16,10 @@
         </div>
         <div class="ui-g" style="width:250px;margin-bottom:10px">
           <div class="ui-g-4" style="margin-top:15px">
-            <p-radioButton name="Gender" value="Male" label="Male" [(ngModel)]="val1"></p-radioButton>
+            <p-radioButton name="Gender" value="Male" label="male" [(ngModel)]="employeeValue.gender" checked></p-radioButton>
           </div>
           <div class="ui-g-6" style="margin-top:15px">
-            <p-radioButton name="Gender" value="Female" label="Female" [(ngModel)]="val1"></p-radioButton>
+            <p-radioButton name="Gender" value="Female" label="female" [(ngModel)]="employeeValue.gender"></p-radioButton>
           </div>
         </div>
       </div>
@@ -32,13 +35,15 @@
       <div class="ui-grid-row">
         <div class="ui-grid-col-4">
           <small>Marital Status</small>
-          <p-dropdown [options]="department" [autoWidth]="false" [(ngModel)]="selectedDepartment" placeholder="select department">
+         
+          <p-dropdown [options]="status" [autoWidth]="false" [(ngModel)]="employeeValue.maritalStatus" placeholder="select status">
 
           </p-dropdown>
         </div>
         <div class="ui-grid-col-4" style="margin-top:0px;margin-left:22px">
-          <small>Date of Birth</small>
-          <p-calendar [(ngModel)]="date2" [showIcon]="true"></p-calendar> <span style="margin-left:35px">{{date2|date}}</span>
+          <small>Anniversary Date</small>
+          <p-calendar [(ngModel)]="employeeValue.anniversaryDate" [showIcon]="true"></p-calendar>
+           <!--<span style="margin-left:35px">{{date2|date}}</span>-->
         </div>
 
       </div>
@@ -52,11 +57,12 @@
 
   <div class="ui-g-4">
     <small>Phone No</small>
-    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [(ngModel)]="text" placeholder="First Name">
+  
+    <input [ngClass]="['classOne']"  type="text" size="30" pInputText  name="phoneNo"   [(ngModel)]="employeeValue.phoneNum" placeholder="enter phone no">
   </div>
   <div class="ui-g-4" style="margin-left:20px">
-    <small>Blood Group</small>
-    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [(ngModel)]="text" placeholder="Last Name">
+    <small>Blood Group </small>
+    <input [ngClass]="['classOne']"  type="text" size="30" pInputText  name="bloodGroup" [(ngModel)]="employeeValue.bloodGroup"  placeholder="enter bloodgroup">
   </div>
   <div class="ui-g-2"></div>
 </div>
@@ -67,11 +73,11 @@
 
   <div class="ui-g-4">
     <small>Pan No</small>
-    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [(ngModel)]="text" placeholder="First Name">
+    <input [ngClass]="['classOne']"  type="text" size="30" pInputText  name="panNo" [(ngModel)]="employeeValue.panNo" placeholder="enter pan no">
   </div>
   <div class="ui-g-4" style="margin-left:20px">
     <small>Aadar No</small>
-    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [(ngModel)]="text" placeholder="Last Name">
+    <input [ngClass]="['classOne']"  type="text" size="30" pInputText  name="adharNo"  [(ngModel)]="employeeValue.adharNo" placeholder="enter aadhar no">
   </div>
   <div class="ui-g-2"></div>
 </div>

@@ -8,7 +8,7 @@ export interface Employee {
     status:string;
     billable:boolean;
     expJoinDate:Date;
-    expSeparatedDate:string;
+    expSeparatedDate:Date;
     joinDate:Date;
     gender:string;
     department:string;
@@ -24,5 +24,11 @@ export interface Employee {
     pCity:string;
     pZipCode:number;
     roles:any;
+    bloodGroup:string;
+    panNo:number;
+    adharNo:number;
+    phoneNum:number;
+    maritalStatus:string,
+    anniversaryDate:Date
     
 }

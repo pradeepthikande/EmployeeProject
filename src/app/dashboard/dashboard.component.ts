@@ -1,6 +1,6 @@
-import { Employee } from './../../../../subfolder/src.3/app/dashboard/shared/employee.interface';
+// import { Employee } from './../../..//dashboard/shared/employee.interface';
 import { Component, OnInit } from '@angular/core';
-// import { Employee } from './shared/employee.interface';
+import { Employee } from './shared/employee.interface';
 import { AddressDetailsComponent } from '../../modules/add-employee-module/add-employee/address-details/address-details.component'
 
 @Component({
@@ -25,7 +25,7 @@ export class DashboardComponent implements OnInit {
     status:'',
     billable: false,
     expJoinDate: new Date,
-    expSeparatedDate: '',
+    expSeparatedDate: new Date,
     joinDate: new Date,
     gender: '',
     department: '',
@@ -40,7 +40,15 @@ export class DashboardComponent implements OnInit {
     pState: '',
     pCity: '',
     pZipCode: 0,
-    roles: ''
+    roles: '',
+    bloodGroup:'',
+    panNo:0,
+    adharNo:0,
+    phoneNum:0,
+    maritalStatus:'',
+    anniversaryDate: new Date
+
+
   };
   onClick() {
     this.counter++;
@@ -63,6 +71,8 @@ export class DashboardComponent implements OnInit {
   constructor() {
     console.log(this.sravani);
   }
+
+
 
 
 

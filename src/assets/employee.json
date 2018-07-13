@@ -1,100 +1,158 @@
 {
-   "employee": [
-	
-      {
-         "sno":"01",
-         "firstName": "Phani",
-         "lastName": "Rahul",
-         "emailId": "rahul.sivalenka@walkingtree.tech",
-         "dept":"Software Engineer",
-         "designation":"3-jul-2017",
-         "joinDate":"31-dec-2018",
-         "details":""
-       
-      },
-	
-      {
-         "sno":"01",
-         "firstName": "Phani",
-         "lastName": "Rahul",
-         "emailId": "rahul.sivalenka@walkingtree.tech",
-         "dept":"Software Engineer",
-         "designation":"3-jul-2017",
-         "joinDate":"31-dec-2018"
-        
-
-      },
-       {
-         "sno":"01",
-         "firstName": "Phani",
-         "lastName": "Rahul",
-         "emailId": "rahul.sivalenka@walkingtree.tech",
-         "dept":"Software Engineer",
-         "designation":"3-jul-2017",
-         "joinDate":"31-dec-2018"
-         
-
-      },
-       {
-         "sno":"01",
-         "firstName": "Phani",
-         "lastName": "Rahul",
-         "emailId": "rahul.sivalenka@walkingtree.tech",
-         "dept":"Software Engineer",
-         "designation":"3-jul-2017",
-         "joinDate":"31-dec-2018"
-        
-      },
-       {
-         "sno":"01",
-         "firstName": "Phani",
-         "lastName": "Rahul",
-         "emailId": "rahul.sivalenka@walkingtree.tech",
-         "dept":"Software Engineer",
-         "designation":"3-jul-2017",
-         "joinDate":"31-dec-2018"
-         
-      },
-       {
-         "sno":"01",
-         "firstName": "Phani",
-         "lastName": "Rahul",
-         "emailId": "rahul.sivalenka@walkingtree.tech",
-         "dept":"Software Engineer",
-         "designation":"3-jul-2017",
-         "joinDate":"31-dec-2018"
-      
-      },
-       {
-         "sno":"01",
-         "firstName": "Phani",
-         "lastName": "Rahul",
-         "emailId": "rahul.sivalenka@walkingtree.tech",
-         "dept":"Software Engineer",
-         "designation":"3-jul-2017",
-         "joinDate":"31-dec-2018"
-       
-      },
-       {
-         "sno":"01",
-         "firstName": "Phani",
-         "lastName": "Rahul",
-         "emailId": "rahul.sivalenka@walkingtree.tech",
-         "dept":"Software Engineer",
-         "designation":"3-jul-2017",
-         "joinDate":"31-dec-2018"
-      
-      },
-       {
-         "sno":"01",
-         "firstName": "Phani",
-         "lastName": "Rahul",
-         "emailId": "rahul.sivalenka@walkingtree.tech",
-         "dept":"Software Engineer",
-         "designation":"3-jul-2017",
-         "joinDate":"31-dec-2018"
-         
-
-      }
-   ]
+  "employee": [
+    {
+      "sno": "01",
+      "firstName": "Phani",
+      "lastName": "Rahul",
+      "emailId": "rahul.sivalenka@walkingtree.tech",
+      "dept": "Software Engineer",
+      "designation": "3-jul-2017",
+      "joinDate": "31-dec-2018",
+      "details": "",
+      "bloodGroup": "A",
+      "panNo": 2233445566,
+      "adharNo": 7098561,
+      "phoneNum": 1234567891,
+      "maritalStatus": "married",
+      "expSeparatedDate": "03/07/2017",
+      "anniversaryDate": "03/07/2017",
+      "gender": "male"
+    },
+    {
+      "sno": "01",
+      "firstName": "Phani",
+      "lastName": "Rahul",
+      "emailId": "rahul.sivalenka@walkingtree.tech",
+      "dept": "Software Engineer",
+      "designation": "3-jul-2017",
+      "joinDate": "31-dec-2018",
+      "bloodGroup": "A",
+      "panNo": 2233445566,
+      "adharNo": 7098561,
+      "phoneNum": 1234567891,
+      "maritalStatus": "married",
+      "expSeparatedDate": "03/07/2017",
+      "anniversaryDate": "03/07/2017",
+      "gender": "male"
+    },
+    {
+      "sno": "01",
+      "firstName": "Phani",
+      "lastName": "Rahul",
+      "emailId": "rahul.sivalenka@walkingtree.tech",
+      "dept": "Software Engineer",
+      "designation": "3-jul-2017",
+      "joinDate": "31-dec-2018",
+      "bloodGroup": "A",
+      "panNo": 2233445566,
+      "adharNo": 7098561,
+      "phoneNum": 1234567891,
+      "maritalStatus": "married",
+      "expSeparatedDate": "03/07/2017",
+      "anniversaryDate": "03/07/2017",
+      "gender": "male"
+    },
+    {
+      "sno": "01",
+      "firstName": "Phani",
+      "lastName": "Rahul",
+      "emailId": "rahul.sivalenka@walkingtree.tech",
+      "dept": "Software Engineer",
+      "designation": "3-jul-2017",
+      "joinDate": "31-dec-2018",
+      "bloodGroup": "A",
+      "panNo": 2233445566,
+      "adharNo": 7098561,
+      "phoneNum": 1234567891,
+      "maritalStatus": "married",
+      "expSeparatedDate": "03/07/2017",
+      "anniversaryDate": "03/07/2017",
+      "gender": "male"
+    },
+    {
+      "sno": "01",
+      "firstName": "Phani",
+      "lastName": "Rahul",
+      "emailId": "rahul.sivalenka@walkingtree.tech",
+      "dept": "Software Engineer",
+      "designation": "3-jul-2017",
+      "joinDate": "31-dec-2018",
+      "bloodGroup": "A",
+      "panNo": 2233445566,
+      "adharNo": 7098561,
+      "phoneNum": 1234567891,
+      "maritalStatus": "married",
+      "expSeparatedDate": "03/07/2017",
+      "anniversaryDate": "03/07/2017",
+      "gender": "male"
+    },
+    {
+      "sno": "01",
+      "firstName": "Phani",
+      "lastName": "Rahul",
+      "emailId": "rahul.sivalenka@walkingtree.tech",
+      "dept": "Software Engineer",
+      "designation": "3-jul-2017",
+      "joinDate": "31-dec-2018",
+      "bloodGroup": "A",
+      "panNo": 2233445566,
+      "adharNo": 7098561,
+      "phoneNum": 1234567891,
+      "maritalStatus": "married",
+      "expSeparatedDate": "03/07/2017",
+      "anniversaryDate": "03/07/2017",
+      "gender": "male"
+    },
+    {
+      "sno": "01",
+      "firstName": "Phani",
+      "lastName": "Rahul",
+      "emailId": "rahul.sivalenka@walkingtree.tech",
+      "dept": "Software Engineer",
+      "designation": "3-jul-2017",
+      "joinDate": "31-dec-2018",
+      "bloodGroup": "A",
+      "panNo": 2233445566,
+      "adharNo": 7098561,
+      "phoneNum": 1234567891,
+      "maritalStatus": "married",
+      "expSeparatedDate": "03/07/2017",
+      "anniversaryDate": "03/07/2017",
+      "gender": "male"
+    },
+    {
+      "sno": "01",
+      "firstName": "Phani",
+      "lastName": "Rahul",
+      "emailId": "rahul.sivalenka@walkingtree.tech",
+      "dept": "Software Engineer",
+      "designation": "3-jul-2017",
+      "joinDate": "31-dec-2018",
+      "bloodGroup": "A",
+      "panNo": 2233445566,
+      "adharNo": 7098561,
+      "phoneNum": 1234567891,
+      "maritalStatus": "married",
+      "expSeparatedDate": "03/07/2017",
+      "anniversaryDate": "03/07/2017",
+      "gender": "male"
+    },
+    {
+      "sno": "01",
+      "firstName": "Phani",
+      "lastName": "Rahul",
+      "emailId": "rahul.sivalenka@walkingtree.tech",
+      "dept": "Software Engineer",
+      "designation": "3-jul-2017",
+      "joinDate": "31-dec-2018",
+      "bloodGroup": "A",
+      "panNo": 2233445566,
+      "adharNo": 7098561,
+      "phoneNum": 1234567891,
+      "maritalStatus": "married",
+      "expSeparatedDate": "03/07/2017",
+      "anniversaryDate": "03/07/2017",
+      "gender": "male"
+    }
+  ]
 }

@@ -11,6 +11,7 @@
   <div class="ui-g-12" [ngClass]="['employeeId-div']">
 
     <app-employeegrid></app-employeegrid>
+    <!--<p>{{employeeDetails}}</p>-->
     <button pButton label="Add New" (click)="onClick($event)"></button>
 
     <p-dialog [visible]="visible" [modal]="true" closable="false">
@@ -28,7 +29,8 @@
 
 
         <p-tabPanel header="Personal Details" [selected]="currentpage == 2">
-          <app-personal-details (pageEvent)="receivingCurrentpage($event)"></app-personal-details>
+          <app-personal-details [employeeValue]="sravani" (pageEvent)="receivingCurrentpage($event)" (page)="savingData($event)"  [employeeValue]="employeeDetails"></app-personal-details>
+       
         </p-tabPanel>
 
         <p-tabPanel header="Address" [selected]="currentpage == 3">

@@ -26,9 +26,10 @@ prevPage(){
         this.currentpage--
 }
 
-  constructor() {}
-    
-   
+
+  constructor() {
+  
+   }
 
   ngOnInit() {
   }
