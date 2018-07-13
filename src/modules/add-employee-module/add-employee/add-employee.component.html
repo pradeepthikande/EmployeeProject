@@ -2,17 +2,17 @@
   <div class="ui-g-2"></div>
 
   <div class="ui-g-4">
-    <input [ngClass]="['classOne']" type="text" size="30" pInputText [(ngModel)]="text" placeholder="First Name">
+    <input [ngClass]="['classOne']" type="text" size="30" pInputText [(ngModel)]="employeeValue.firstName" [ngModelOptions]="{standalone: true}" placeholder="First Name">
   </div>
   <div class="ui-g-4">
-    <input [ngClass]="['classOne']" type="text" size="30" pInputText [(ngModel)]="text" placeholder="Last Name">
+    <input [ngClass]="['classOne']" type="text" size="30" pInputText [(ngModel)]="employeeValue.lastName" [ngModelOptions]="{standalone: true}" placeholder="Last Name">
   </div>
   <div class="ui-g-2"></div>
 </div>
 <div class="ui-g">
   <div class="ui-g-2"></div>
   <div class="ui-g-8">
-    <input [ngClass]="['classTwo']" type="text" size="30" pInputText [(ngModel)]="text" placeholder="Email ID ">
+    <input [ngClass]="['classTwo']" type="text" size="30" pInputText [(ngModel)]="employeeValue.emailId" [ngModelOptions]="{standalone: true}" placeholder="Email ID ">
   </div>
   <div class="ui-g-2"></div>
 </div>

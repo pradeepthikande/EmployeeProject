@@ -17,8 +17,8 @@
 
       <p-tabView>
 
-        <p-tabPanel header="Employee" (show)="onShow(i)" [selected]="currentpage == 0">
-          <app-add-employee (pageEvent)="receivingCurrentpage($event)" [employeeValue]="employee"></app-add-employee>
+        <p-tabPanel header="Employee" [selected]="currentpage == 0">
+          <app-add-employee [employeeValue]="sravani" (pageEvent)="receivingCurrentpage($event)" (page)="savingData($event)" [employeeValue]="employeeDetails"></app-add-employee>
         </p-tabPanel>
 
 

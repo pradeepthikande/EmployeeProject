@@ -1,5 +1,6 @@
+import { Employee } from './../../../../subfolder/src.3/app/dashboard/shared/employee.interface';
 import { Component, OnInit } from '@angular/core';
-import { Employee } from './shared/employee.interface';
+// import { Employee } from './shared/employee.interface';
 import { AddressDetailsComponent } from '../../modules/add-employee-module/add-employee/address-details/address-details.component'
 
 @Component({
@@ -9,7 +10,7 @@ import { AddressDetailsComponent } from '../../modules/add-employee-module/add-e
   // directives:[AddressDetailsComponent]
 })
 export class DashboardComponent implements OnInit {
-
+  // emp:Employee[]
   visible = false;
   counter: number = 0;
   public currentpage = 0;
@@ -20,8 +21,8 @@ export class DashboardComponent implements OnInit {
     lastName: '',
     emailId: '',
     expDepartment: '',
-    primarySkill: '',
-    status: '',
+    primarySkill:'',
+    status:'',
     billable: false,
     expJoinDate: new Date,
     expSeparatedDate: '',
@@ -51,6 +52,7 @@ export class DashboardComponent implements OnInit {
   receivingCurrentpage($event) {
 
     this.currentpage = $event;
+    console.log(this.sravani)
 
   }
 

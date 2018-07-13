@@ -30,6 +30,7 @@ export class AddressDetailsComponent implements OnInit {
 
   ngOnInit() {
     // debugger;
+
     if (this.sravani == undefined) {
       this.sravani = {
         sno: ' ',
@@ -61,7 +62,7 @@ export class AddressDetailsComponent implements OnInit {
     }
 
 
-    console.log(this.sravani);
+    // console.log(this.sravani);
 
   }
 

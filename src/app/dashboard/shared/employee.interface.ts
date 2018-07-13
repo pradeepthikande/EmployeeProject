@@ -3,7 +3,7 @@ export interface Employee {
     firstName:string;
     lastName:string;
     emailId:string;
-    expDepartment :string;
+    expDepartment:string;
     primarySkill:string;
     status:string;
     billable:boolean;
