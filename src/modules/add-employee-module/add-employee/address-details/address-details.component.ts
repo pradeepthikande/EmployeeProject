@@ -23,12 +23,13 @@ export class AddressDetailsComponent implements OnInit {
 
   public currentpage: number;
 
-  @Output() pageEvent = new EventEmitter<number>()
+  @Output() pageEvent = new EventEmitter<number>();
 
+  @Output() page = new EventEmitter<Employee>();
   constructor() { }
 
   ngOnInit() {
-    debugger;
+    // debugger;
     if (this.sravani == undefined) {
       this.sravani = {
         sno: ' ',
@@ -63,17 +64,29 @@ export class AddressDetailsComponent implements OnInit {
     console.log(this.sravani);
 
   }
-  onNextPageClick() {
 
-  }
+
+changeAddress(){
+  this.sravani.checking==true;
+
+if(this.sravani.checking = true){
+  this.sravani.pAddress=this.sravani.cAddress;
+  this.sravani.pCity=this.sravani.cCity;
+  this.sravani.pCountry=this.sravani.cCountry;
+  this.sravani.pZipCode=this.sravani.cZipCode;
+  this.sravani.pState=this.sravani.cState;
+  
+}
+}
+
   changePage() {
 
     this.pageEvent.emit(this.currentpage = 4)
-
+    this.page.emit(this.sravani);
   }
   prevPage() {
     this.pageEvent.emit(this.currentpage = 2)
-
+ this.page.emit(this.sravani);
   }
 
 }

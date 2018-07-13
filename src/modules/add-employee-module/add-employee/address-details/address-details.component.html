@@ -45,7 +45,7 @@
       <div class="ui-g-10">
 
 
-        <input type="checkbox" name="conformation" name="checking" [(ngModel)]="sravani.checking" [ngModelOptions]="{standalone: true}">
+        <input type="checkbox" name="conformation" (click)="changeAddress()" name="checking" [(ngModel)]="sravani.checking" [ngModelOptions]="{standalone: true}">
         <label>Check If Current Address And Perminent Address Is Same</label>
         <h5 class="data">Address</h5>
         <textarea class="text" rows="5" cols="40" placeholder="Type Here" name="paddress" [(ngModel)]="sravani.pAddress" [ngModelOptions]="{standalone: true}"></textarea><br>

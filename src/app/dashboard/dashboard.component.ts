@@ -50,10 +50,14 @@ export class DashboardComponent implements OnInit {
 
   receivingCurrentpage($event) {
 
-    this.currentpage = $event
+    this.currentpage = $event;
 
   }
 
+  savingData($event) {
+    // this.sravani = $event;
+    console.log($event);
+  }
   constructor() {
     console.log(this.sravani);
   }
