@@ -3,28 +3,34 @@
 
 
 
-<p-dialog [visible]="visible" [modal]="true">
+<p-dialog [visible]="visible"
+          [modal]="true">
   <p-tabView>
 
-    <p-tabPanel header="Employee" [selected]="currentpage == 0">
+    <p-tabPanel header="Employee"
+                [selected]="currentpage == 0">
       <app-add-employee [employeeValue]="employeeDetails"></app-add-employee>
     </p-tabPanel>
 
 
-    <p-tabPanel header="Work Details" [selected]="currentpage == 1">
+    <p-tabPanel header="Work Details"
+                [selected]="currentpage == 1">
       <app-work-details></app-work-details>
     </p-tabPanel>
 
 
-    <p-tabPanel header="Personal Details" [selected]="currentpage == 2">
+    <p-tabPanel header="Personal Details"
+                [selected]="currentpage == 2">
       <app-personal-details [employeeValue]="employeeDetails"></app-personal-details>
     </p-tabPanel>
 
-    <p-tabPanel header="Address" [selected]="currentpage == 3">
-      <app-address-details></app-address-details>
+    <p-tabPanel header="Address"
+                [selected]="currentpage == 3">
+      <app-address-details [employeeValue]="employeeDetails"></app-address-details>
     </p-tabPanel>
 
-    <p-tabPanel header="Access Details" [selected]="currentpage == 4">
+    <p-tabPanel header="Access Details"
+                [selected]="currentpage == 4">
       <app-access-details></app-access-details>
     </p-tabPanel>
 
@@ -32,8 +38,16 @@
   </p-tabView>
   <div class="ui-g">
     <div class="ui-g-2"></div>
-    <button [ngClass]="['classOne']" (click)="prevPage()" pButton type="button" label="Previous"></button>
-    <button [ngClass]="['classTwo']" (click)="changePage()" pButton type="button" label="Next"></button>
+    <button [ngClass]="['classOne']"
+            (click)="prevPage()"
+            pButton
+            type="button"
+            label="Previous"></button>
+    <button [ngClass]="['classTwo']"
+            (click)="changePage()"
+            pButton
+            type="button"
+            label="Next"></button>
 
   </div>
 </p-dialog>

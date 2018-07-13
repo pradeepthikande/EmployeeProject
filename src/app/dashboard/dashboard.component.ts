@@ -15,7 +15,34 @@ export class DashboardComponent implements OnInit {
   counter: number = 0;
   public currentpage = 0;
 
-  sravani: Employee = {
+  // employee: Employee = {
+  //   sno: ' ',
+  //   firstName: '',
+  //   lastName: '',
+  //   emailId: '',
+  //   expDepartment: '',
+  //   primarySkill: '',
+  //   status: '',
+  //   billable: false,
+  //   expJoinDate: new Date,
+  //   expSeparatedDate: '',
+  //   joinDate: new Date,
+  //   gender: '',
+  //   department: '',
+  //   cAddress: ' ',
+  //   cCountry: '',
+  //   cState: '',
+  //   cCity: '',
+  //   cZipCode: 0,
+  //   checking: false,
+  //   pAddress: '',
+  //   pCountry: '',
+  //   pState: '',
+  //   pCity: '',
+  //   pZipCode: 0,
+  //   roles: ''
+  // }
+  employeeValue: Employee = {
     sno: ' ',
     firstName: '',
     lastName: '',
@@ -61,7 +88,7 @@ export class DashboardComponent implements OnInit {
   receivingCurrentpage($event) {
 
     this.currentpage = $event;
-    console.log(this.sravani)
+    console.log(this.employeeValue)
 
   }
 
@@ -70,7 +97,7 @@ export class DashboardComponent implements OnInit {
     console.log($event);
   }
   constructor() {
-    console.log(this.sravani);
+    console.log(this.employeeValue);
   }
 
 
@@ -80,6 +107,6 @@ export class DashboardComponent implements OnInit {
   ngOnInit() {
     // debugger;
 
-    console.log(this.sravani);
+    console.log(this.employeeValue);
   }
 }

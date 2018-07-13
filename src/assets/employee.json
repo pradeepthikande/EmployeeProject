@@ -16,7 +16,16 @@
       "maritalStatus": "married",
       "expSeparatedDate": "03/07/2017",
       "anniversaryDate": "03/07/2017",
-      "gender": "male"
+      "gender": "male",
+      "cAddress": "any address you can give",
+      "cCountry": "India",
+      "cCity": "hyderabad",
+      "cState": "telangana",
+      "checking": "false",
+      "pAddress": "this is your perminent address",
+      "pCountry": "India",
+      "pCity": "guntur",
+      "pState": "AndhraPradesh"
     },
     {
       "sno": "01",
@@ -33,7 +42,16 @@
       "maritalStatus": "married",
       "expSeparatedDate": "03/07/2017",
       "anniversaryDate": "03/07/2017",
-      "gender": "male"
+      "gender": "male",
+      "cAddress": "any address you can give",
+      "cCountry": "India",
+      "cCity": "hyderabad",
+      "cState": "telangana",
+      "checking": "false",
+      "pAddress": "this is your perminent address",
+      "pCountry": "India",
+      "pCity": "guntur",
+      "pState": "AndhraPradesh"
     },
     {
       "sno": "01",
@@ -50,7 +68,16 @@
       "maritalStatus": "married",
       "expSeparatedDate": "03/07/2017",
       "anniversaryDate": "03/07/2017",
-      "gender": "male"
+      "gender": "male",
+      "cAddress": "any address you can give",
+      "cCountry": "India",
+      "cCity": "hyderabad",
+      "cState": "telangana",
+      "checking": "false",
+      "pAddress": "this is your perminent address",
+      "pCountry": "India",
+      "pCity": "guntur",
+      "pState": "AndhraPradesh"
     },
     {
       "sno": "01",
@@ -67,7 +94,16 @@
       "maritalStatus": "married",
       "expSeparatedDate": "03/07/2017",
       "anniversaryDate": "03/07/2017",
-      "gender": "male"
+      "gender": "male",
+      "cAddress": "any address you can give",
+      "cCountry": "India",
+      "cCity": "hyderabad",
+      "cState": "telangana",
+      "checking": "false",
+      "pAddress": "this is your perminent address",
+      "pCountry": "India",
+      "pCity": "guntur",
+      "pState": "AndhraPradesh"
     },
     {
       "sno": "01",
@@ -84,7 +120,16 @@
       "maritalStatus": "married",
       "expSeparatedDate": "03/07/2017",
       "anniversaryDate": "03/07/2017",
-      "gender": "male"
+      "gender": "male",
+      "cAddress": "any address you can give",
+      "cCountry": "India",
+      "cCity": "hyderabad",
+      "cState": "telangana",
+      "checking": "false",
+      "pAddress": "this is your perminent address",
+      "pCountry": "India",
+      "pCity": "guntur",
+      "pState": "AndhraPradesh"
     },
     {
       "sno": "01",
@@ -101,7 +146,16 @@
       "maritalStatus": "married",
       "expSeparatedDate": "03/07/2017",
       "anniversaryDate": "03/07/2017",
-      "gender": "male"
+      "gender": "male",
+      "cAddress": "any address you can give",
+      "cCountry": "India",
+      "cCity": "hyderabad",
+      "cState": "telangana",
+      "checking": "false",
+      "pAddress": "this is your perminent address",
+      "pCountry": "India",
+      "pCity": "guntur",
+      "pState": "AndhraPradesh"
     },
     {
       "sno": "01",
@@ -118,7 +172,16 @@
       "maritalStatus": "married",
       "expSeparatedDate": "03/07/2017",
       "anniversaryDate": "03/07/2017",
-      "gender": "male"
+      "gender": "male",
+      "cAddress": "any address you can give",
+      "cCountry": "India",
+      "cCity": "hyderabad",
+      "cState": "telangana",
+      "checking": "false",
+      "pAddress": "this is your perminent address",
+      "pCountry": "India",
+      "pCity": "guntur",
+      "pState": "AndhraPradesh"
     },
     {
       "sno": "01",
@@ -135,7 +198,16 @@
       "maritalStatus": "married",
       "expSeparatedDate": "03/07/2017",
       "anniversaryDate": "03/07/2017",
-      "gender": "male"
+      "gender": "male",
+      "cAddress": "any address you can give",
+      "cCountry": "India",
+      "cCity": "hyderabad",
+      "cState": "telangana",
+      "checking": "false",
+      "pAddress": "this is your perminent address",
+      "pCountry": "India",
+      "pCity": "guntur",
+      "pState": "AndhraPradesh"
     },
     {
       "sno": "01",
@@ -152,7 +224,16 @@
       "maritalStatus": "married",
       "expSeparatedDate": "03/07/2017",
       "anniversaryDate": "03/07/2017",
-      "gender": "male"
+      "gender": "male",
+      "cAddress": "any address you can give",
+      "cCountry": "India",
+      "cCity": "hyderabad",
+      "cState": "telangana",
+      "checking": "false",
+      "pAddress": "this is your perminent address",
+      "pCountry": "India",
+      "pCity": "guntur",
+      "pState": "AndhraPradesh"
     }
   ]
 }

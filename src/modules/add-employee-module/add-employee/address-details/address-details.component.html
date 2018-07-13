@@ -1,14 +1,14 @@
 <!--<form [formGroup]="userForm" (ngSubmit)="onSubmit(userForm)" novalidate>-->
 <form>
   <p-fieldset legend="Current Details" [toggleable]="true" class="asd">
-
+    
     <div class="ui-g-12">
       <div class="ui-g-2"></div>
 
       <div class="ui-g-3">
 
         <h5 class="data">Address</h5>
-        <textarea class="text" rows="5" cols="40" placeholder="Type Here" name="caddress" [(ngModel)]="sravani.cAddress"  [ngModelOptions]="{standalone: true}"></textarea><br>
+        <textarea class="text" rows="5" cols="40" placeholder="Type Here" name="caddress" [ngModelOptions]="{standalone: true}" [(ngModel)]="employeeValue.cAddress"></textarea><br>
       </div>
 
       <div class="ui-g-12">
@@ -16,19 +16,19 @@
 
         <div class="ui-g-3">
           <p class="data">Country</p>
-          <input type="text" class="input1" name="ccountry" [(ngModel)]="sravani.cCountry"  [ngModelOptions]="{standalone: true}" placeholder="country" />
+          <input type="text" class="input1" name="ccountry" [ngModelOptions]="{standalone: true}" placeholder="country" [(ngModel)]="employeeValue.cCountry" />
 
           <p class="data">City</p>
 
-          <input type="text" class="input1" name="ccity" [(ngModel)]="sravani.cCity" [ngModelOptions]="{standalone: true}" placeholder="City" />
+          <input type="text" class="input1" name="ccity" [ngModelOptions]="{standalone: true}" placeholder="City" [(ngModel)]="employeeValue.cCity" />
         </div>
         <div class="ui-g-6">
           <p class="data">State</p>
 
-          <input type="text" class="input2" name="cstate" [(ngModel)]="sravani.cState" [ngModelOptions]="{standalone: true}" placeholder="State" />
+          <input type="text" class="input2" name="cstate" [ngModelOptions]="{standalone: true}" placeholder="State" [(ngModel)]="employeeValue.cState" />
           <p class="data">Zip Code</p>
 
-          <input type="text" class="input2" name="czipcode" [(ngModel)]="sravani.cZipCode" [ngModelOptions]="{standalone: true}" placeholder="ZipCode" />
+          <input type="text" class="input2" name="czipcode" [ngModelOptions]="{standalone: true}" placeholder="ZipCode" [(ngModel)]="employeeValue.cZipCode" />
         </div>
 
       </div>
@@ -45,10 +45,10 @@
       <div class="ui-g-10">
 
 
-        <input type="checkbox" name="conformation" (click)="changeAddress()" name="checking" [(ngModel)]="sravani.checking" [ngModelOptions]="{standalone: true}">
+        <input type="checkbox" name="conformation" (click)="changeAddress()" name="checking" [ngModelOptions]="{standalone: true}"[(ngModel)]="employeeValue.checking">
         <label>Check If Current Address And Perminent Address Is Same</label>
         <h5 class="data">Address</h5>
-        <textarea class="text" rows="5" cols="40" placeholder="Type Here" name="paddress" [(ngModel)]="sravani.pAddress" [ngModelOptions]="{standalone: true}"></textarea><br>
+        <textarea class="text" rows="5" cols="40" placeholder="Type Here" name="paddress" [ngModelOptions]="{standalone: true}"[(ngModel)]="employeeValue.pAddress"></textarea><br>
       </div>
 
       <div class="ui-g-12">
@@ -56,19 +56,19 @@
 
         <div class="ui-g-3">
           <p class="data">Country</p>
-          <input type="text" class="input1" name="pcountry" [(ngModel)]="sravani.pCountry" [ngModelOptions]="{standalone: true}" placeholder="country" />
+          <input type="text" class="input1" name="pcountry" [ngModelOptions]="{standalone: true}" placeholder="country" [(ngModel)]="employeeValue.pCountry"/>
 
           <p class="data">City</p>
 
-          <input type="text" class="input1" name="pcity" [(ngModel)]="sravani.pCity" [ngModelOptions]="{standalone: true}" placeholder="City" />
+          <input type="text" class="input1" name="pcity"  [ngModelOptions]="{standalone: true}" placeholder="City" [(ngModel)]="employeeValue.pCity"/>
         </div>
         <div class="ui-g-6">
           <p class="data">State</p>
 
-          <input type="text" class="input2" name="pstate" [(ngModel)]="sravani.pState" [ngModelOptions]="{standalone: true}" placeholder="State" />
+          <input type="text" class="input2" name="pstate"  [ngModelOptions]="{standalone: true}" placeholder="State" [(ngModel)]="employeeValue.pState" />
           <p class="data">Zip Code</p>
 
-          <input type="text" class="input2" name="pzipcode" [(ngModel)]="sravani.pZipCode" [ngModelOptions]="{standalone: true}" placeholder="ZipCode" />
+          <input type="text" class="input2" name="pzipcode"  [ngModelOptions]="{standalone: true}" placeholder="ZipCode" [(ngModel)]="employeeValue.pZipCode" />
         </div>
 
       </div>

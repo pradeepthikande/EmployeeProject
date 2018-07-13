@@ -34,7 +34,7 @@
         </p-tabPanel>
 
         <p-tabPanel header="Address" [selected]="currentpage == 3">
-          <app-address-details [sravani]="sravani" (pageEvent)="receivingCurrentpage($event)" (page)="savingData($event)" ></app-address-details>
+          <app-address-details [employeeValue]="employeeDetails" (pageEvent)="receivingCurrentpage($event)" (page)="savingData($event)" ></app-address-details>
         </p-tabPanel>
 
         <p-tabPanel header="Access Details" [selected]="currentpage == 4">

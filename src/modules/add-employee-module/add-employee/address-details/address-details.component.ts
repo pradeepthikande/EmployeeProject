@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter,OnChanges,SimpleChanges } from '@angular/core';
 
 import { FieldsetModule } from 'primeng/fieldset';
 
@@ -16,9 +16,11 @@ import {
   templateUrl: './address-details.component.html',
   styleUrls: ['./address-details.component.css']
 })
-export class AddressDetailsComponent implements OnInit {
+export class AddressDetailsComponent implements OnInit,OnChanges {
 
-  @Input() sravani: Employee;
+  // @Input() sravani: Employee;
+
+  @Input() employeeValue: Employee;
 
 
   public currentpage: number;
@@ -30,9 +32,41 @@ export class AddressDetailsComponent implements OnInit {
 
   ngOnInit() {
     // debugger;
+    // if (this.sravani === undefined) {
+    //   this.sravani = {
+    //     sno: ' ',
+    //     firstName: '',
+    //     lastName: '',
+    //     emailId: '',
+    //     expDepartment: '',
+    //     primarySkill: '',
+    //     status: '',
+    //     billable: false,
+    //     expJoinDate: new Date,
+    //     expSeparatedDate: '',
+    //     joinDate: new Date,
+    //     gender: '',
+    //     department: '',
+    //     cAddress: ' ',
+    //     cCountry: '',
+    //     cState: '',
+    //     cCity: '',
+    //     cZipCode: 0,
+    //     checking: false,
+    //     pAddress: '',
+    //     pCountry: '',
+    //     pState: '',
+    //     pCity: '',
+    //     pZipCode: 0,
+    //     roles: ''
+    //   };
+    // }
+    
 
-    if (this.sravani == undefined) {
-      this.sravani = {
+    // console.log(this.sravani);
+
+    if (this.employeeValue === undefined) {
+      this.employeeValue= {
         sno: ' ',
         firstName: '',
         lastName: '',
@@ -41,12 +75,12 @@ export class AddressDetailsComponent implements OnInit {
         primarySkill: '',
         status: '',
         billable: false,
-        expJoinDate: new Date,
-        expSeparatedDate: '',
-        joinDate: new Date,
+        expJoinDate: new Date(),
+        expSeparatedDate: new Date(),
+        joinDate: new Date(),
         gender: '',
         department: '',
-        cAddress: ' ',
+        cAddress: '',
         cCountry: '',
         cState: '',
         cCity: '',
@@ -57,25 +91,28 @@ export class AddressDetailsComponent implements OnInit {
         pState: '',
         pCity: '',
         pZipCode: 0,
-        roles: ''
+        roles: '',
+        bloodGroup: '',
+         panNo:0,
+    adharNo:0,
+    phoneNum:0,
+    maritalStatus:'',
+    anniversaryDate:new Date()
       };
     }
-
-
-    // console.log(this.sravani);
 
   }
 
 
 changeAddress(){
-  this.sravani.checking==true;
+  this.employeeValue.checking==true;
 
-if(this.sravani.checking = true){
-  this.sravani.pAddress=this.sravani.cAddress;
-  this.sravani.pCity=this.sravani.cCity;
-  this.sravani.pCountry=this.sravani.cCountry;
-  this.sravani.pZipCode=this.sravani.cZipCode;
-  this.sravani.pState=this.sravani.cState;
+if(this.employeeValue.checking = true){
+  this.employeeValue.pAddress=this.employeeValue.cAddress;
+  this.employeeValue.pCity=this.employeeValue.cCity;
+  this.employeeValue.pCountry=this.employeeValue.cCountry;
+  this.employeeValue.pZipCode=this.employeeValue.cZipCode;
+  this.employeeValue.pState=this.employeeValue.cState;
   
 }
 }
@@ -83,11 +120,14 @@ if(this.sravani.checking = true){
   changePage() {
 
     this.pageEvent.emit(this.currentpage = 4)
-    this.page.emit(this.sravani);
+    this.page.emit(this.employeeValue);
   }
   prevPage() {
     this.pageEvent.emit(this.currentpage = 2)
- this.page.emit(this.sravani);
+ this.page.emit(this.employeeValue);
+  }
+  ngOnChanges(changes: SimpleChanges) {
+    console.log(this.employeeValue);
   }
 
 }
