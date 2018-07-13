@@ -6,9 +6,7 @@
         <div class="ui-grid-col-4">
           <small>Date of Birth</small>
           <p-calendar [(ngModel)]="date2" [showIcon]="true"></p-calendar> <span style="margin-left:35px">{{date2|date}}</span>
-          
         </div>
-
 
         <div class="class3">
           <p style="margin-top:10px;margin-left:10px">Gender</p>
@@ -34,7 +32,7 @@
       <div class="ui-grid-row">
         <div class="ui-grid-col-4">
           <small>Marital Status</small>
-          <p-dropdown [options]="department" [autoWidth]="false" [(ngModel)]="selectedDepartment" placeholder="select status">
+          <p-dropdown [options]="department" [autoWidth]="false" [(ngModel)]="selectedDepartment" placeholder="select department">
 
           </p-dropdown>
         </div>
@@ -54,13 +52,11 @@
 
   <div class="ui-g-4">
     <small>Phone No</small>
-    <!--<p>[(ngModel)]="personal.PhoneNo"</p>-->
-    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [ngModel]="personal?.PhoneNo" (ngModelChange)="personal.PhoneNo"  placeholder="enter phone no">
+    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [(ngModel)]="text" placeholder="First Name">
   </div>
   <div class="ui-g-4" style="margin-left:20px">
-    <small>Blood Group </small>
-    <!--<p>[(ngModel)]="personal.BloodGroup"</p>-->
-    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText  [ngModel]="personal?.BloodGroup" (ngModelChange)="personal.BloodGroup" placeholder="enter bloodgroup">
+    <small>Blood Group</small>
+    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [(ngModel)]="text" placeholder="Last Name">
   </div>
   <div class="ui-g-2"></div>
 </div>
@@ -68,20 +64,21 @@
 
 <div class="ui-g">
   <div class="ui-g-2"></div>
+
   <div class="ui-g-4">
     <small>Pan No</small>
-    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [ngModel]="personal?.PanNo" (ngModelChange)="personal.PanNo" placeholder="enter pan no">
+    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [(ngModel)]="text" placeholder="First Name">
   </div>
   <div class="ui-g-4" style="margin-left:20px">
     <small>Aadar No</small>
-    <!--<p>[(ngModel)]="personal.AadharNo"</p>-->
-    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [ngModel]="personal?.AadharNo" (ngModelChange)="personal.AadharNo" placeholder="enter aadhar no">
+    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [(ngModel)]="text" placeholder="Last Name">
   </div>
   <div class="ui-g-2"></div>
 </div>
+
 <div class="ui-g">
-        <div class="ui-g-2"></div>
-        <button [ngClass]="['classO']" (click)="prevPage()" pButton type="button" label="Previous"></button>
-        <button [ngClass]="['classT']" (click)="changePage()" pButton type="button" label="Next"></button>
-        
-      </div>
+  <div class="ui-g-2"></div>
+  <button [ngClass]="['classO']" (click)="prevPage()" pButton type="button" label="Previous"></button>
+  <button [ngClass]="['classT']" (click)="changePage()" pButton type="button" label="Next"></button>
+
+</div>

@@ -8,8 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ViewDetailsComponent implements OnInit {
 @Input() employeeDetails:any;
 @Input() visible:boolean;
- 
-    //  visible=false;
+
      counter: number = 0;
      currentpage=0;
 
@@ -27,16 +26,9 @@ prevPage(){
         this.currentpage--
 }
 
-
-private test:{BloodGroup:string,PhoneNo:number,AadharNo:number,PanNo:number};
-  constructor() {
-    this.test={
-      BloodGroup:'A',
-      PhoneNo:1234567891,
-      AadharNo:70608090,
-      PanNo:2233445566
-    }
-   }
+  constructor() {}
+    
+   
 
   ngOnInit() {
   }

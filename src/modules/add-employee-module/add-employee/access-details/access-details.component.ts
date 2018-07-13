@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { MultiSelectModule } from 'primeng/multiselect';
 import { SelectItem } from 'primeng/api';
 @Component({
@@ -9,6 +9,14 @@ import { SelectItem } from 'primeng/api';
 export class AccessDetailsComponent implements OnInit {
   roles: SelectItem[];
   selectedRoles: string[] = [];
+
+  public currentpage: number;
+  @Output() pageEvent = new EventEmitter<number>()
+
+  prevPage() {
+    this.pageEvent.emit(this.currentpage = 3)
+
+  }
   constructor() {
     this.roles = [];
     this.roles.push({ label: 'Admin', value: 'Admin' });
@@ -18,6 +26,7 @@ export class AccessDetailsComponent implements OnInit {
     this.roles.push({ label: 'Tester', value: 'Tester' });
     this.roles.push({ label: 'Ui-Developer', value: 'Ui-Developer' });
   }
+
 
   ngOnInit() {
   }

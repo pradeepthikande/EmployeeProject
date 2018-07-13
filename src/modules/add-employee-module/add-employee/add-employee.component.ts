@@ -1,6 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Employee } from '../../../app/dashboard/shared/employee.interface';
-
+import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
 
 
 @Component({
@@ -9,17 +9,24 @@ import { Employee } from '../../../app/dashboard/shared/employee.interface';
   styleUrls: ['./add-employee.component.css']
 })
 export class AddEmployeeComponent implements OnInit {
-  @Input() employee: Employee
-  // visible = false;
-  // public currentpage = 0;
+  @Input() employeeValue: Employee
+  currentpage: number = 0;
+  @Output() pageEvent = new EventEmitter<number>()
+  userForm: FormGroup;
+  changePage() {
+    this.pageEvent.emit(this.currentpage = 1)
 
-  // public changePage() {
-  //   this.currentpage++;
+  }
 
-  // }
 
-  constructor() { }
+  constructor(private fb: FormBuilder) { }
 
   ngOnInit() {
+
+    this.userForm = this.fb.group({
+      firstName: ['', [<any>Validators.required, <any>Validators.minLength(5)]],
+      lastName: ['', [<any>Validators.required]],
+      emailId: ['', [<any>Validators.required]]
+    })
   }
 }

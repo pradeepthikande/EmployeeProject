@@ -10,29 +10,25 @@ import { AddressDetailsComponent } from '../../modules/add-employee-module/add-e
 })
 export class DashboardComponent implements OnInit {
 
-    visible=false;
-    counter: number = 0;
-    public currentpage = 0;
+  visible = false;
+  counter: number = 0;
+  public currentpage = 0;
+// emp=employee[]
+     onClick() {
+        this.counter++;
+        this.visible=!this.visible;
+     }
+  // changePage() {
+  //         this.currentpage++;
+  // }
 
-   onClick() {
-      this.counter++;
-      this.visible=!this.visible;
-   }
+  receivingCurrentpage($event) {
 
+    this.currentpage = $event
 
-
-
-changePage() {
-        this.currentpage++;
-}
-
-
-prevPage(){
-this.currentpage--
-}
-
+  }
   constructor() { }
-  
+
   employee: Employee = {
     sno: '',
     firstName: '',
@@ -60,6 +56,15 @@ this.currentpage--
     pZipCode: 0,
     roles: ''
   };
+
+//   onShow(i) {
+// this.visible=!this.visible;
+
+
+
+//   }
+
+
 
   ngOnInit() {
   }

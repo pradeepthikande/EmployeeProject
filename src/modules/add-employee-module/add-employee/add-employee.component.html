@@ -2,23 +2,23 @@
   <div class="ui-g-2"></div>
 
   <div class="ui-g-4">
-    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [(ngModel)]="text" placeholder="First Name">
+    <input [ngClass]="['classOne']" type="text" size="30" pInputText [(ngModel)]="text" placeholder="First Name">
   </div>
   <div class="ui-g-4">
-    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [(ngModel)]="text" placeholder="Last Name">
+    <input [ngClass]="['classOne']" type="text" size="30" pInputText [(ngModel)]="text" placeholder="Last Name">
   </div>
   <div class="ui-g-2"></div>
 </div>
 <div class="ui-g">
   <div class="ui-g-2"></div>
   <div class="ui-g-8">
-    <input [ngClass]="['classTwo']" id="in" type="text" size="30" pInputText [(ngModel)]="text" placeholder="Email ID ">
+    <input [ngClass]="['classTwo']" type="text" size="30" pInputText [(ngModel)]="text" placeholder="Email ID ">
   </div>
   <div class="ui-g-2"></div>
 </div>
 <div class="ui-g">
-        <div class="ui-g-2"></div>
-      
-        <button [ngClass]="['classT']" (click)="changePage()" pButton type="button" label="Next"></button>
-        <!--<app-work-details *ngIf="currentpage>0" [Currentpage]='currentpage'></app-work-details>-->
-      </div>
+  <div class="ui-g-2"></div>
+
+  <button [ngClass]="['classT']" (click)="changePage()" pButton type="button" label="Next"></button>
+  <!--<app-work-details *ngIf="currentpage>0" [Currentpage]='currentpage'></app-work-details>-->
+</div>

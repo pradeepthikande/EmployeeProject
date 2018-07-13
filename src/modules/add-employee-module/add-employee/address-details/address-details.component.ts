@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 import { FieldsetModule } from 'primeng/fieldset';
 
@@ -19,7 +19,10 @@ import {
 export class AddressDetailsComponent implements OnInit {
 
   @Input() employee: Employee;
- 
+
+  public currentpage: number;
+  @Output() pageEvent = new EventEmitter<number>()
+
   constructor() { }
   // userForm: FormGroup;
   // submitted: boolean;
@@ -37,10 +40,18 @@ export class AddressDetailsComponent implements OnInit {
     // })
 
   }
-  onNextPageClick(){
-    
-  }
+  onNextPageClick() {
 
+  }
+  changePage() {
+
+    this.pageEvent.emit(this.currentpage = 4)
+
+  }
+  prevPage() {
+    this.pageEvent.emit(this.currentpage = 2)
+
+  }
 
 
   //  onSubmit({ value, valid }: { value: userForm, valid: boolean }) {
