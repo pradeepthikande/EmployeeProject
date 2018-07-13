@@ -14,7 +14,7 @@
     <!--<p>{{employeeDetails}}</p>-->
     <button pButton label="Add New" (click)="onClick($event)"></button>
 
-    <p-dialog [visible]="visible" [modal]="true" closable="false">
+    <p-dialog [(visible)]="visible" [modal]="true" closable="true">
 
       <p-tabView>
 
@@ -30,7 +30,7 @@
 
         <p-tabPanel header="Personal Details" [selected]="currentpage == 2">
           <app-personal-details [employeeValue]="sravani" (pageEvent)="receivingCurrentpage($event)" (page)="savingData($event)"  [employeeValue]="employeeDetails"></app-personal-details>
-       
+
         </p-tabPanel>
 
         <p-tabPanel header="Address" [selected]="currentpage == 3">
