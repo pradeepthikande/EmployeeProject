@@ -54,12 +54,13 @@
 
   <div class="ui-g-4">
     <small>Phone No</small>
-    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [(ngModel)]="personal.PhoneNo" placeholder="enter phone no">
+    <!--<p>[(ngModel)]="personal.PhoneNo"</p>-->
+    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [ngModel]="personal?.PhoneNo" (ngModelChange)="personal.PhoneNo"  placeholder="enter phone no">
   </div>
   <div class="ui-g-4" style="margin-left:20px">
-    <small>Blood Group</small>
-    <!--<p>{{personal.BloodGroup}}</p>-->
-    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [(ngModel)]="personal.BloodGroup" placeholder="enter bloodgroup">
+    <small>Blood Group </small>
+    <!--<p>[(ngModel)]="personal.BloodGroup"</p>-->
+    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText  [ngModel]="personal?.BloodGroup" (ngModelChange)="personal.BloodGroup" placeholder="enter bloodgroup">
   </div>
   <div class="ui-g-2"></div>
 </div>
@@ -70,11 +71,12 @@
 
   <div class="ui-g-4">
     <small>Pan No</small>
-    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [(ngModel)]="text" placeholder="enter pan no">
+    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [ngModel]="personal?.PanNo" (ngModelChange)="personal.PanNo" placeholder="enter pan no">
   </div>
   <div class="ui-g-4" style="margin-left:20px">
     <small>Aadar No</small>
-    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [(ngModel)]="personal.AadharNo" placeholder="enter aadhar no">
+    <!--<p>[(ngModel)]="personal.AadharNo"</p>-->
+    <input [ngClass]="['classOne']" id="in" type="text" size="30" pInputText [ngModel]="personal?.AadharNo" (ngModelChange)="personal.AadharNo" placeholder="enter aadhar no">
   </div>
   <div class="ui-g-2"></div>
 </div>
