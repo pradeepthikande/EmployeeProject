@@ -9,9 +9,8 @@ import { FieldsetModule } from 'primeng/fieldset';
   styleUrls: ['./add-employee.component.css']
 })
 export class AddEmployeeComponent implements OnInit, OnChanges {
-  @Input() employeeValue: Employee
+  @Input() employeeValue: Employee;
   currentpage: number = 0;
-  
   @Output() pageEvent = new EventEmitter<number>();
 
   @Output() page = new EventEmitter<Employee>();
@@ -36,7 +35,7 @@ export class AddEmployeeComponent implements OnInit, OnChanges {
       lastName: ['', [<any>Validators.required]],
       emailId: ['', [<any>Validators.required]]
 
-    })
+    });
 
 
     if (this.employeeValue === undefined) {
@@ -49,9 +48,9 @@ export class AddEmployeeComponent implements OnInit, OnChanges {
         primarySkill: '',
         status: '',
         billable: false,
-        expJoinDate: new Date,
-        expSeparatedDate: '',
-        joinDate: new Date,
+        expJoinDate: new Date(),
+        expSeparatedDate: new Date(),
+        joinDate: new Date(),
         gender: '',
         department: '',
         cAddress: '',
@@ -65,10 +64,14 @@ export class AddEmployeeComponent implements OnInit, OnChanges {
         pState: '',
         pCity: '',
         pZipCode: 0,
-        roles: ''
-
-
-      }
+        roles: '',
+        bloodGroup: '',
+        panNo: 0,
+        phoneNum: 0,
+        adharNo: 0,
+        maritalStatus: '',
+        anniversaryDate: new Date()
+};
 
     }
 

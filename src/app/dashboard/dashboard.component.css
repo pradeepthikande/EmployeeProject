@@ -8,10 +8,12 @@
 .header-div {
   border-bottom: 2px solid #302f74;
   padding-top: 20px;
+   background-color: #5453A4!important;
 }
 .sidemenu-div{
     height: 1004px;
     width:15%;
+     background-color: #5453A4!important;
 }
 .employeeId-div{
     background-color: #302F74;

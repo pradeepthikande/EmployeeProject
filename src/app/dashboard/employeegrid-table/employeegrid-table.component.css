@@ -30,3 +30,11 @@
 *{
     font-family: Roboto, Regular;
 }
+.viewDetailsBtn{
+    background-color: inherit!important;
+    cursor: pointer;
+    border:none!important;
+    text-decoration: underline!important;
+    text-transform: lowercase;
+    color: white!important;
+}

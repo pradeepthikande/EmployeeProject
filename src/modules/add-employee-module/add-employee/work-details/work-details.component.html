@@ -1,66 +1,58 @@
-<div class="ui-g">
-  <div class="ui-g-2"></div>
+<form>
+  <!--<p>{{employeeDetails}}</p>-->
+  <div class="ui-g">
+    <div class="ui-g-2"></div>
+    <div class="ui-g-8">
+      <div class="ui-grid ui-grid-responsive ui-fluid">
+        <div class="ui-grid-row">
+          <div class="ui-grid-col-12">
+            <p-dropdown [options]="expDepartment" [autoWidth]="false" [(ngModel)]="employeeValue.expDepartment" placeholder="select department"
+              name="expDepartment"></p-dropdown>
 
-  <div class="ui-g-8">
-    <div class="ui-grid ui-grid-responsive ui-fluid">
-      <div class="ui-grid-row">
-        <div class="ui-grid-col-12">
-
-          <p-dropdown [options]="department" [autoWidth]="false" [(ngModel)]="selectedDepartment" placeholder="select department">
-
-          </p-dropdown>
-
+            <!--<p-dropdown [options]="expDepartment" [autoWidth]="false" [(ngModel)]="employeeValue.expDepartment" name="expDepartment" placeholder="select department">
+            </p-dropdown>-->
+          </div>
         </div>
       </div>
     </div>
-
   </div>
-</div>
 
-<div class="ui-g">
-  <div class="ui-g-2"></div>
+  <div class="ui-g">
+    <div class="ui-g-2"></div>
 
-  <div class="ui-g-8">
-    <div class="ui-grid ui-grid-responsive ui-fluid">
-      <div class="ui-grid-row">
-        <div class="ui-grid-col-12">
-
-          <p-dropdown [options]="department" [autoWidth]="false" [(ngModel)]="selectedDepartment" placeholder="select Primary Skill">
-
-          </p-dropdown>
-
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div class="ui-g">
-  <div class="ui-g-2"></div>
-
-  <div class="ui-g-4">
-    <div class="ui-grid ui-grid-responsive ui-fluid">
-      <div class="ui-grid-row">
-        <div class="ui-grid-col-12">
-          <label>status</label>
-          <p-dropdown [options]="department" [autoWidth]="false" [(ngModel)]="selectedDepartment" placeholder="Select Status">
-
-          </p-dropdown>
-
+    <div class="ui-g-8">
+      <div class="ui-grid ui-grid-responsive ui-fluid">
+        <div class="ui-grid-row">
+          <div class="ui-grid-col-12">
+            <p-dropdown [options]="primaryskill" [autoWidth]="false" [(ngModel)]="employeeValue.primarySkill" name="primarySkill" placeholder="select Primary Skill">
+            </p-dropdown>
+          </div>
         </div>
       </div>
 
     </div>
   </div>
 
-  <div class="ui-g" style="width:250px;margin-top:28px">
-    <div class="ui-g-12">
-      <p-checkbox name="group1" value="Is billable" label="is Billable" [(ngModel)]="selectedCities"></p-checkbox>
+  <div class="ui-g">
+    <div class="ui-g-2"></div>
+    <div class="ui-g-4">
+      <div class="ui-grid ui-grid-responsive ui-fluid">
+        <div class="ui-grid-row">
+          <div class="ui-grid-col-12">
+            <label>status</label>
+            <p-dropdown [options]="status" [autoWidth]="false" [(ngModel)]="employeeValue.status" name="status" placeholder="Select Status">
+            </p-dropdown>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui-g" style="width:250px;margin-top:28px">
+      <div class="ui-g-12">
+        <p-checkbox name="group1" value="Is billable" label="is Billable" dateFormat="YYYY-MM-DD" [(ngModel)]="employeeValue.billable" name="billiable"></p-checkbox>
+      </div>
     </div>
   </div>
-
-
   <div class="ui-g">
     <div class="ui-g-2"></div>
     <div class="ui-g-10">
@@ -68,22 +60,21 @@
         <div class="ui-grid-row">
           <div class="ui-grid-col-6">
             <small>Joining Date</small>
-            <p-calendar [(ngModel)]="date2" [showIcon]="true"></p-calendar> <span style="margin-left:35px">{{date2|date}}</span>
+            <p-calendar [(ngModel)]="employeeValue.joinDate" name="date1" dateFormat="YYYY-MM-DD" [showIcon]="true"></p-calendar> <span style="margin-left:35px; ">{{employeeValue.joinDate|date}}</span>
           </div>
           <div class="ui-grid-col-6">
             <small>Confirmed Date</small>
-            <p-calendar [ngClass]="['classTwo']" [(ngModel)]="date2" [showIcon]="true"></p-calendar> <span style="margin-left:35px">{{date2|date}}</span>
+            <p-calendar [ngClass]="['classTwo']" [(ngModel)]="employeeValue.expJoinDate" name="date2" [showIcon]="true"></p-calendar> <span style="margin-left:35px">{{employeeValue.expJoinDate|date}}</span>
           </div>
           <div class="ui-grid-col-6">
             <small>Seperated Date</small>
-            <p-calendar [ngClass]="['classTwo']" [(ngModel)]="date2" [showIcon]="true"></p-calendar> <span style="margin-left:35px">{{date2|date}}</span>
+            <p-calendar [ngClass]="['classTwo']" [(ngModel)]="employeeValue.expSeparatedDate" name="date3" [showIcon]="true"></p-calendar> <span style="margin-left:35px">{{employeeValue.expSeparatedDate|date}}</span>
           </div>
         </div>
       </div>
-
     </div>
   </div>
-</div>
+</form>
 
 <div class="ui-g">
   <div class="ui-g-2"></div>

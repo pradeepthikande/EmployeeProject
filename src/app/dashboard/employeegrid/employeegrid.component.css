@@ -1,6 +1,5 @@
-.ShadowEmployee {
-  border: 2px solid gray;
-  border-radius: 10px;
+.employeeGrid{
+  padding-left: 3%;
 }
 /*.ShadowEmployee-icon {
   border-right: 2px solid gray;

@@ -6,30 +6,28 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./view-details.component.css']
 })
 export class ViewDetailsComponent implements OnInit {
-@Input() employeeDetails:any;
-@Input() visible:boolean;
+@Input() employeeDetails: any;
+@Input() visible: boolean;
 
-     counter: number = 0;
-     currentpage=0;
+     counter = 0;
+     currentpage = 0;
+
+
 
 onClick() {
       this.counter++;
-      this.visible=!this.visible;
+      this.visible = !this.visible;
 }
-    
-changePage() {
+    changePage() {
         this.currentpage++;
 }
 
 
-prevPage(){
-        this.currentpage--
+prevPage() {
+        this.currentpage--;
 }
 
-
-  constructor() {
-  
-   }
+  constructor() {}
 
   ngOnInit() {
   }

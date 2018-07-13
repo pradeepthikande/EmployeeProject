@@ -14,7 +14,7 @@
     <ng-template pTemplate="body" let-employee let-details="rowData" let-i="rowIndex">
       <tr>
         <td *ngFor="let col of cols">
-          <span *ngIf="col.field==='details'"><button pButton (click)="show(i)" class="">VIEW DETAILS</button></span>
+          <span *ngIf="col.field==='details'"><button pButton (click)="show(i)" [ngClass]="['viewDetailsBtn']" >VIEW DETAILS</button></span>
           <span *ngIf="col.field!=='details'">{{employee[col.field]}}</span>
         </td>
       </tr>

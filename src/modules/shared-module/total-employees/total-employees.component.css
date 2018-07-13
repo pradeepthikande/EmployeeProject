@@ -5,8 +5,19 @@
    background-color:  #5453A4;
    text-align: center;
    padding-bottom: 20px;
+     padding-right: 15px;
+ padding-left: 15px;
 }
 .ShadowEmployee-icon {
  text-align: center;
  padding-top:15%;
+   padding-right: 25px;
+ padding-left: 15px;
+
+}
+.ShadowEmployee {
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right:0px;
 }

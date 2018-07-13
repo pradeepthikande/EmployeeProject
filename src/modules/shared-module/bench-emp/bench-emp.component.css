@@ -2,19 +2,26 @@
   border: 2px solid gray;
   border-radius: 10px;
 }*/
-.ShadowEmployee-icon {
-  border-right: 2px solid gray;
- text-align: center;
- padding-top:15%;
+*{
+    font-family: Roboto, Regular;
 }
 .ShadowEmployee-text{
    background-color:  #5453A4;
    text-align: center;
    padding-bottom: 20px;
+     padding-right: 15px;
+ padding-left: 15px;
 }
-.numberBox{
-  padding: 20px;
-  background-color:white; 
-  border-radius:50px; 
-  color:black
+.ShadowEmployee-icon {
+ text-align: center;
+ padding-top:15%;
+   padding-right: 25px;
+ padding-left: 15px;
+
+}
+.ShadowEmployee {
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right:0px;
 }
