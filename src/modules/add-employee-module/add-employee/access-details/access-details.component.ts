@@ -15,18 +15,14 @@ export class AccessDetailsComponent implements OnInit {
 
   public currentpage: number;
   @Input() employeeValue: Employee;
-  @Output() pageEvent = new EventEmitter<number>()
-
+  @Output() pageEvent = new EventEmitter<number>();
 
   @Output() page = new EventEmitter<Employee>();
   prevPage() {
-    this.pageEvent.emit(this.currentpage = 3)
-
+    this.pageEvent.emit((this.currentpage = 3));
   }
   save() {
-
     this.page.emit(this.employeeValue);
-
   }
   constructor() {
     this.roles = [];
@@ -38,10 +34,7 @@ export class AccessDetailsComponent implements OnInit {
     this.roles.push({ label: 'Ui-Developer', value: 'Ui-Developer' });
   }
 
-
   ngOnInit() {
-
-
     if (this.employeeValue === undefined) {
       this.employeeValue = {
         sno: '',
@@ -52,9 +45,9 @@ export class AccessDetailsComponent implements OnInit {
         primarySkill: '',
         status: '',
         billable: false,
-        expJoinDate: new Date,
-        expSeparatedDate: '',
-        joinDate: new Date,
+        expJoinDate: new Date(),
+        expSeparatedDate:new Date(),
+        joinDate: new Date(),
         gender: '',
         department: '',
         cAddress: '',
@@ -68,12 +61,14 @@ export class AccessDetailsComponent implements OnInit {
         pState: '',
         pCity: '',
         pZipCode: 0,
-        roles: []
-
-
-      }
-
+        roles: [],
+        bloodGroup: '',
+        panNo: 0,
+        phoneNum: 0,
+        adharNo: 0,
+        maritalStatus: '',
+        anniversaryDate: new Date()
+      };
     }
   }
-
 }
