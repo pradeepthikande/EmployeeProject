@@ -1,6 +1,9 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { MultiSelectModule } from 'primeng/multiselect';
 import { SelectItem } from 'primeng/api';
+import { FieldsetModule } from 'primeng/fieldset';
+// import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
+import { Employee } from '../../../../app/dashboard/shared/employee.interface';
 @Component({
   selector: 'app-access-details',
   templateUrl: './access-details.component.html',
@@ -11,10 +14,18 @@ export class AccessDetailsComponent implements OnInit {
   selectedRoles: string[] = [];
 
   public currentpage: number;
+  @Input() employeeValue: Employee;
   @Output() pageEvent = new EventEmitter<number>()
 
+
+  @Output() page = new EventEmitter<Employee>();
   prevPage() {
     this.pageEvent.emit(this.currentpage = 3)
+
+  }
+  save() {
+
+    this.page.emit(this.employeeValue);
 
   }
   constructor() {
@@ -29,6 +40,40 @@ export class AccessDetailsComponent implements OnInit {
 
 
   ngOnInit() {
+
+
+    if (this.employeeValue === undefined) {
+      this.employeeValue = {
+        sno: '',
+        firstName: '',
+        lastName: '',
+        emailId: '',
+        expDepartment: '',
+        primarySkill: '',
+        status: '',
+        billable: false,
+        expJoinDate: new Date,
+        expSeparatedDate: '',
+        joinDate: new Date,
+        gender: '',
+        department: '',
+        cAddress: '',
+        cCountry: '',
+        cState: '',
+        cCity: '',
+        cZipCode: 0,
+        checking: false,
+        pAddress: '',
+        pCountry: '',
+        pState: '',
+        pCity: '',
+        pZipCode: 0,
+        roles: []
+
+
+      }
+
+    }
   }
 
 }

@@ -40,7 +40,7 @@ export class PersonalDetailsComponent implements OnInit,OnChanges {
 
   }
   ngOnInit() {
-    debugger;
+  
    
     if(this.employeeValue===undefined){
      this.employeeValue= {
