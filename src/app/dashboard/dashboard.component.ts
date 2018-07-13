@@ -13,24 +13,9 @@ export class DashboardComponent implements OnInit {
   visible = false;
   counter: number = 0;
   public currentpage = 0;
-// emp=employee[]
-     onClick() {
-        this.counter++;
-        this.visible=!this.visible;
-     }
-  // changePage() {
-  //         this.currentpage++;
-  // }
 
-  receivingCurrentpage($event) {
-
-    this.currentpage = $event
-
-  }
-  constructor() { }
-
-  employee: Employee = {
-    sno: '',
+  sravani: Employee = {
+    sno: ' ',
     firstName: '',
     lastName: '',
     emailId: '',
@@ -43,7 +28,7 @@ export class DashboardComponent implements OnInit {
     joinDate: new Date,
     gender: '',
     department: '',
-    cAddress: '',
+    cAddress: ' ',
     cCountry: '',
     cState: '',
     cCity: '',
@@ -56,16 +41,28 @@ export class DashboardComponent implements OnInit {
     pZipCode: 0,
     roles: ''
   };
+  onClick() {
+    this.counter++;
+    this.visible = !this.visible;
+  }
 
-//   onShow(i) {
-// this.visible=!this.visible;
+  // @Output() 
 
+  receivingCurrentpage($event) {
 
+    this.currentpage = $event
 
-//   }
+  }
+
+  constructor() {
+    console.log(this.sravani);
+  }
 
 
 
   ngOnInit() {
+    // debugger;
+
+    console.log(this.sravani);
   }
 }

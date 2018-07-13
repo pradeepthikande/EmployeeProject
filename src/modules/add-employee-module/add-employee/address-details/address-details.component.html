@@ -8,7 +8,7 @@
       <div class="ui-g-3">
 
         <h5 class="data">Address</h5>
-        <textarea class="text" rows="5" cols="40" placeholder="Type Here" (ngModel)="employee.cAddress"></textarea><br>
+        <textarea class="text" rows="5" cols="40" placeholder="Type Here" name="caddress" [(ngModel)]="sravani.cAddress"  [ngModelOptions]="{standalone: true}"></textarea><br>
       </div>
 
       <div class="ui-g-12">
@@ -16,19 +16,19 @@
 
         <div class="ui-g-3">
           <p class="data">Country</p>
-          <input type="text" class="input1" (ngModel)="employee.cCountry" placeholder="country" />
+          <input type="text" class="input1" name="ccountry" [(ngModel)]="sravani.cCountry"  [ngModelOptions]="{standalone: true}" placeholder="country" />
 
           <p class="data">City</p>
 
-          <input type="text" class="input1" (ngModel)="employee.cCity" placeholder="City" />
+          <input type="text" class="input1" name="ccity" [(ngModel)]="sravani.cCity" [ngModelOptions]="{standalone: true}" placeholder="City" />
         </div>
         <div class="ui-g-6">
           <p class="data">State</p>
 
-          <input type="text" class="input2" (ngModel)="employee.cState" placeholder="State" />
+          <input type="text" class="input2" name="cstate" [(ngModel)]="sravani.cState" [ngModelOptions]="{standalone: true}" placeholder="State" />
           <p class="data">Zip Code</p>
 
-          <input type="text" class="input2" (ngModel)="cZipCode" placeholder="ZipCode" />
+          <input type="text" class="input2" name="czipcode" [(ngModel)]="sravani.cZipCode" [ngModelOptions]="{standalone: true}" placeholder="ZipCode" />
         </div>
 
       </div>
@@ -45,10 +45,10 @@
       <div class="ui-g-10">
 
 
-        <input type="checkbox" name="conformation" (ngModel)="employee.checking">
+        <input type="checkbox" name="conformation" name="checking" [(ngModel)]="sravani.checking" [ngModelOptions]="{standalone: true}">
         <label>Check If Current Address And Perminent Address Is Same</label>
         <h5 class="data">Address</h5>
-        <textarea class="text" rows="5" cols="40" placeholder="Type Here" (ngModel)="employee.pAddress"></textarea><br>
+        <textarea class="text" rows="5" cols="40" placeholder="Type Here" name="paddress" [(ngModel)]="sravani.pAddress" [ngModelOptions]="{standalone: true}"></textarea><br>
       </div>
 
       <div class="ui-g-12">
@@ -56,19 +56,19 @@
 
         <div class="ui-g-3">
           <p class="data">Country</p>
-          <input type="text" class="input1" (ngModel)="employee.pCountry" placeholder="country" />
+          <input type="text" class="input1" name="pcountry" [(ngModel)]="sravani.pCountry" [ngModelOptions]="{standalone: true}" placeholder="country" />
 
           <p class="data">City</p>
 
-          <input type="text" class="input1" (ngModel)="employee.pCity" placeholder="City" />
+          <input type="text" class="input1" name="pcity" [(ngModel)]="sravani.pCity" [ngModelOptions]="{standalone: true}" placeholder="City" />
         </div>
         <div class="ui-g-6">
           <p class="data">State</p>
 
-          <input type="text" class="input2" (ngModel)="employee.pState" placeholder="State" />
+          <input type="text" class="input2" name="pstate" [(ngModel)]="sravani.pState" [ngModelOptions]="{standalone: true}" placeholder="State" />
           <p class="data">Zip Code</p>
 
-          <input type="text" class="input2" (ngModel)="employee.pZipCode" placeholder="ZipCode" />
+          <input type="text" class="input2" name="pzipcode" [(ngModel)]="sravani.pZipCode" [ngModelOptions]="{standalone: true}" placeholder="ZipCode" />
         </div>
 
       </div>
@@ -77,11 +77,9 @@
 
   </p-fieldset>
 
+  <div class="ui-g">
+    <div class="ui-g-2"></div>
+    <button [ngClass]="['classO']" (click)="prevPage()" pButton type="button" label="Previous"></button>
+    <button [ngClass]="['classT']" (click)="changePage()" pButton type="button" label="Next"></button>
+  </div>
 </form>
-
-<div class="ui-g">
-  <div class="ui-g-2"></div>
-  <button [ngClass]="['classO']" (click)="prevPage()" pButton type="button" label="Previous"></button>
-  <button [ngClass]="['classT']" (click)="changePage()" pButton type="button" label="Next"></button>
-
-</div>

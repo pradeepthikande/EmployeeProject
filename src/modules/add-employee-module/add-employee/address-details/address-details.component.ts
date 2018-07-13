@@ -18,26 +18,49 @@ import {
 })
 export class AddressDetailsComponent implements OnInit {
 
-  @Input() employee: Employee;
+  @Input() sravani: Employee;
+
 
   public currentpage: number;
+
   @Output() pageEvent = new EventEmitter<number>()
 
   constructor() { }
-  // userForm: FormGroup;
-  // submitted: boolean;
+
   ngOnInit() {
-    // this.userForm = new FormGroup({
-    //   cAddress: new FormControl('', [<any>Validators.required]),
+    debugger;
+    if (this.sravani == undefined) {
+      this.sravani = {
+        sno: ' ',
+        firstName: '',
+        lastName: '',
+        emailId: '',
+        expDepartment: '',
+        primarySkill: '',
+        status: '',
+        billable: false,
+        expJoinDate: new Date,
+        expSeparatedDate: '',
+        joinDate: new Date,
+        gender: '',
+        department: '',
+        cAddress: ' ',
+        cCountry: '',
+        cState: '',
+        cCity: '',
+        cZipCode: 0,
+        checking: false,
+        pAddress: '',
+        pCountry: '',
+        pState: '',
+        pCity: '',
+        pZipCode: 0,
+        roles: ''
+      };
+    }
 
-    //   cCountry: new FormControl('', [<any>Validators.required]),
 
-    //   cState: new FormControl('', [<any>Validators.required]),
-
-    //   cCity: new FormControl('', [<any>Validators.required]),
-
-    //   cZipCode: new FormControl('', [<any>Validators.required])
-    // })
+    console.log(this.sravani);
 
   }
   onNextPageClick() {
@@ -53,10 +76,4 @@ export class AddressDetailsComponent implements OnInit {
 
   }
 
-
-  //  onSubmit({ value, valid }: { value: userForm, valid: boolean }) {
-  //   this.submitted = true;
-  //   console.log(value,valid);
-
-  // }
 }
